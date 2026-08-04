@@ -1,0 +1,108 @@
+﻿Name,Category,Description,Error Response,Http Method,Success Response
+/api/drivers/{driverId},Delivery Drivers,Retrieve details of a specific delivery driver.,,GET,
+/api/customers,Customers,Retrieve a list of all customers,,GET,
+/api/restaurants/{restaurantId},Restaurants,Delete a specific restaurant,"{
+  ""code"": DLTFAILS"",
+  ""message"":User doesn't exist exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""User deleted successfully""
+}"
+/api/orders/{orderId}/status,Orders,Update the status of a specific order.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Task list is empty""
+}",PUT,{List of task}
+/api/orders/{orderId},Orders,Cancel a specific order,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Task list is empty""
+}",DELETE,{List of task}
+/api/drivers,Delivery Drivers,Retrieve a list of all delivery drivers,,GET,
+/api/customers/{customerId},Customers,Retrieve details of a specific customer.,,GET,
+/api/restaurants/{restaurantId}/menu,Menu Items,Retrieve all menu items of a specific restaurant.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Project list is empty""
+}",GET,{list of all  projects}
+/api/restaurants/{restaurantId}/menu/{itemId},Menu Items,Update details of a specific menu item in a restaurant.,"{
+  ""code"": DLTFAILS"",
+  ""message"":Project doesn't exist exist""
+}",PUT,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""Proejct deleted successfully""
+}"
+/api/restaurants,Restaurants,create a new restaurants,"{
+  ""code"": UPDTFAILS"",
+  ""message"":User doesn't exist exist""
+}",POST,"{
+  ""code"": ""SUCCESS"",
+  ""message"": ""User added successfully""
+}"
+/api/customers/{customerId},Customers,Update details of a specific customer.,,PUT,
+,Orders,,,,
+/api/restaurants/{restaurantId},Restaurants,Retrieve details of a specific restaurant,"{
+  ""code"": GETFAILS"",
+  ""message"":User doesn't exist exist""
+}",GET,{Object of user }
+/api/drivers/{driverId}/location,Delivery Drivers,Update the location of a specific driver.,,PUT,
+/api/restaurants/{restaurantId},Restaurants,Update details of a specific restaurant.,"{
+  ""code"": UPDTFAILS"",
+  ""message"":User doesn't exist exist""
+}",PUT,"{
+  ""code"": ""UPDATESUCCESS"",
+  ""message"": ""User updated successfully""
+}"
+,Orders,,,,
+/api/restaurants/{restaurantId}/menu,Menu Items,Add a new menu item to a specific restaurant.,"{
+  ""code"": UPDTFAILS"",
+  ""message"":Project doesn't exist exist""
+}",POST,"{
+  ""code"": ""UPDATESUCCESS"",
+  ""message"": ""Project updated successfully""
+}"
+/api/restaurants,Restaurants,Retrieve a list of all restaurants.,"{
+  ""code"": GETFAILS"",
+  ""message"":User list is empty""
+}",GET,{list of all users}
+/api/customers/{customerId},Customers,Delete a specific customer,,DELETE,
+,Delivery Drivers,,,,
+/api/restaurants/{restaurantId}/menu/{itemId},Menu Items,Delete a specific menu item from a restaurant,"{
+  ""code"": DLTFAILS"",
+  ""message"":Project doesn't exist exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""Proejct deleted successfully""
+}"
+/api/orders/{orderId},Orders," Retrieve details of a specific order.","{
+  ""code"": GETALLFAILS"",
+  ""message"":Task list is empty""
+}",GET,{List of task}
+/api/orders/{orderId}/assignDriver/{driverId},Delivery Drivers,Assign a specific driver to an order.,,PUT,
+/api/orders,Orders,Place a new order,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Task list is empty""
+}",POST,{List of task}
+/api/restaurants/{restaurantId}/menu,Restaurants,Retrieve all menu items of a specific restaurant,"{
+  ""code"": DLTFAILS"",
+  ""message"":User doesn't exist exist""
+}",GET,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""User deleted successfully""
+}"
+/api/customers/{customerId}/orders,Customers,Retrieve all orders placed by a specific customer,,GET,
+/api/drivers/{driverId}/orders,Delivery Drivers,Retrieve all orders assigned to a specific delivery driver.,,GET,
+/api/customers/{customerId}/reviews,Customers,Retrieve all reviews submitted by a specific customer.,,GET,
+/api/restaurants/{restaurantId}/reviews,Restaurants,Retrieve all reviews submitted for a specific restaurant.,"{
+  ""code"": DLTFAILS"",
+  ""message"":User doesn't exist exist""
+}",GET,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""User deleted successfully""
+}"
+/api/customers/{customerId}/favorites,Customers,Add a restaurant to the list of favorites for a specific customer,,POST,
+/api/customers/{customerId}/favorites/{restaurantId},Customers,Remove a restaurant from the list of favorites for a specific customer.,,DELETE,
+/api/restaurants/{restaurantId}/delivery-areas,Restaurants,: Retrieve all delivery areas served by a specific restaurant,"{
+  ""code"": DLTFAILS"",
+  ""message"":User doesn't exist exist""
+}",GET,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""User deleted successfully""
+}"

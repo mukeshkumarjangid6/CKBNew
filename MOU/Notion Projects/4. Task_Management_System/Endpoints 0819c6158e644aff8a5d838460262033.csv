@@ -1,0 +1,326 @@
+﻿Name,Category,Description,Error Response,Http Method,Success Response
+/api/attachments/all,Attachment,Get a list of all attachments.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Attachment list is empty""
+}",GET,{List of object of Attachment}
+/api/tasks/update/{taskId},Task,Update task details.,"{
+  ""code"": UPDTFAILS"",
+  ""message"":Task doesn't exist exist""
+}",PUT,"{
+  ""code"": ""UPDATESUCCESS"",
+  ""message"": ""Task updated successfully""
+}"
+/api/attachments/delete/{attachmentId},Attachment,Delete an attachment.,"{
+  ""code"": DLTFAILS"",
+  ""message"":Attacment doesn't exist exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""Comment deleted successfully""
+}"
+/api/projects/user-role/{roleName},Project,Get projects for users with a specific role.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Project list is empty""
+}",GET,{list of all  projects}
+/api/userroles/updae/{userRoleId},User Role,Update user role details.,"{
+  ""code"": UPDTFAILS"",
+  ""message"":UserRoles doesn't exist exist""
+}",PUT,"{
+  ""code"": ""UPDATESUCCESS"",
+  ""message"": ""UserRoles updated successfully""
+}"
+/api/comments/post,Comment,Create a new comment.,"{
+  ""code"": ADDFAILS"",
+  ""message"":Comments already exist""
+}",POST,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Comments added successfully""
+}"
+/api/userroles/all,User Role,Get a list of all user roles.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":UserRoles list is empty""
+}",GET,{List of object of UserRoles}
+/api/categories/{categoryId},Category,Delete a category.,"{
+  ""code"": DLTFAILS"",
+  ""message"":Category doesn't exist exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""Category deleted successfully""
+}"
+/api/users/delete/{userId},User,Delete a user,"{
+  ""code"": DLTFAILS"",
+  ""message"":User doesn't exist exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""User deleted successfully""
+}"
+/api/tasks/due-soon,Task,Get tasks that are due soon.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Task list is empty""
+}",GET,{List of task}
+/api/projects/post,Project,Create a new project.,"{
+  ""code"": ADDFAILS"",
+  ""message"":Project already exist""
+}",POST,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Project added successfully""
+}"
+/api/comments/update/{commentId},Comment,Update comment details.,"{
+  ""code"": UPDTFAILS"",
+  ""message"":category doesn't exist""
+}",PUT,"{
+  ""code"": ""UPDATESUCCESS"",
+  ""message"": ""Comment updated successfully""
+}"
+/api/userroles/delete/{userRoleId},User Role,Delete a user role.,"{
+  ""code"": DLTFAILS"",
+  ""message"":UserRoles doesn't  exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""UserRoles deleted successfully""
+}"
+/api/tasks/{taskId},Task,Delete a task.,"{
+  ""code"": DLTFAILS"",
+  ""message"":Task doesn't exist exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""task deleted successfully""
+}"
+/api/categories/post,Category,Create a new category.,"{
+  ""code"": ADDFAILS"",
+  ""message"":category already exist""
+}",POST,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Category added successfully""
+}"
+/api/userroles/revoke/{userRoleId}/{userId},UserRoles,Revoke a user role from a user.,"{
+  ""code"": DLTFAILS"",
+  ""message"":UserRole doesn't  exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""UserRole deleted successfully""
+}"
+/api/projects/high-priority-tasks,Project,Get projects with high-priority tasks.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Project list is empty""
+}",GET,{list of all  projects}
+/api/users/most-tasks,User,users who are assigned the most tasks,"{
+  ""code"": ADDFAILS"",
+  ""message"":User already exist""
+}",GET,{list of Object of user }
+/api/users/search/{name},User,Search for users by name,"{
+  ""code"": GETFAILS"",
+  ""message"":User doesn't exist exist""
+}",GET,{Object of user }
+/api/projects/status/{status},Project,Get projects by status.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Project list is empty""
+}",GET,{list of all  projects}
+/api/attachments/post,Attachment,Upload a new attachment.,"{
+  ""code"": ADDFAILS"",
+  ""message"":Attachment already exist""
+}",POST,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Attachment added successfully""
+}"
+/api/projects/delete/{projectId},Project,Delete a project.,"{
+  ""code"": DLTFAILS"",
+  ""message"":Project doesn't exist exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""Proejct deleted successfully""
+}"
+/api/projects/ongoing,Project,Get projects that are currently ongoing.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Project list is empty""
+}",GET,{list of all  projects}
+/api/users/update/{userId},User,Update user details.,"{
+  ""code"": UPDTFAILS"",
+  ""message"":User doesn't exist exist""
+}",PUT,"{
+  ""code"": ""UPDATESUCCESS"",
+  ""message"": ""User updated successfully""
+}"
+/api/users/all,User,Get a list of all users,"{
+  ""code"": GETFAILS"",
+  ""message"":User list is empty""
+}",GET,{list of all users}
+/api/comments/{commentId},Comment,Get details of a specific comment by ID.,"{
+  ""code"": GETFAILS"",
+  ""message"":Comment doesn't exist""
+}",GET,{Object of comment}
+/api/projects/date-range/{startDate}/{endDate},Project,Get projects within a specified date range.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Project list is empty""
+}",GET,{list of all  projects}
+/api/users/{userId},User,Get details of a specific user by ID.,"{
+  ""code"": GETFAILS"",
+  ""message"":User doesn't exist exist""
+}",GET,{Object of user }
+/api/users/post,User,Create a new user,"{
+  ""code"": ADDFAILS"",
+  ""message"":User already exist""
+}",POST,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""User added successfully""
+}"
+,Task,,,,
+,Task,,,,
+/api/attachments/{attachmentId},Attachment,Get details of a specific attachment by ID.,"{
+  ""code"": GETFAILS"",
+  ""message"":Attachment doesn't exist""
+}",GET,{Object of Attachment}
+/api/projects/update/{projectId},Project,Update project details.,"{
+  ""code"": UPDTFAILS"",
+  ""message"":Project doesn't exist exist""
+}",PUT,"{
+  ""code"": ""UPDATESUCCESS"",
+  ""message"": ""Project updated successfully""
+}"
+/api/notifications/{notificationId},Notification,Get details of a specific notification by ID.,"{
+  ""code"": GETFAILS"",
+  ""message"":Attachment doesn't exist""
+}",GET,{Object of Notification}
+/api/tasks/post,Task,Create a new task.,"{
+  ""code"": ADDFAILS"",
+  ""message"":Project already exist""
+}",POST,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Project added successfully""
+}"
+/api/userroles/{userRoleId},User Role,Get details of a specific user role by ID.,"{
+  ""code"": GETFAILS"",
+  ""message"":UserRoles doesn't exist""
+}",GET,{Object of userRoles}
+,Category,,,,
+/api/categories/update/{categoryId},Category,Update category details.,"{
+  ""code"": UPDTFAILS"",
+  ""message"":Category doesn't  exist""
+}",PUT,"{
+  ""code"": ""UPDATESUCCESS"",
+  ""message"": ""Category updated successfully""
+}"
+,User,,,,
+/api/tasks/priority/{priority}/status/{status},Task,Get tasks by priority and status.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Task list is empty""
+}",GET,{List of task}
+/api/users/authenticate,User,Authenticate a user.,"{
+  ""code"": ADDFAILS"",
+  ""message"":User already exist""
+}",GET,"{
+  ""code"": ""AUTHSUCCESS"",
+  ""message"": ""User is valid""
+}"
+/api/notifications/post,Notification,Create a new notification.,"{
+  ""code"": ADDFAILS"",
+  ""message"":Notification already exist""
+}",POST,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Notification added successfully""
+}"
+/api/users/completed-tasks,User,Get users who have completed tasks,"{
+  ""code"": GETFAILS"",
+  ""message"":User list is empty""
+}",GET,{list of Object of user }
+/api/userroles/user/{userId},UserRoles,Get user roles for a specific user.,"{
+  ""code"": GETFAILS"",
+  ""message"":UserRole doesn't exist""
+}",GET,{Object of userRole}
+/api/notifications/delete/{notificationId},Notification,Delete a notification.,"{
+  ""code"": DLTFAILS"",
+  ""message"":Notification doesn't  exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""Notification deleted successfully""
+}"
+/api/categories/task-count,Category,Get categories along with the count of tasks in each category.,"{
+  ""code"":GETFAILS"",
+  ""message"":Category doesn't exist exist""
+}",GET,{”category”: “<count of task>” }
+/api/taskcategories/post,Task-category,Associate a task with one or more categories.,"{
+  ""code"": ADDFAILS"",
+  ""message"":Task-Category already exist""
+}",POST,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Task-category added successfully""
+}"
+/api/comments/all,Comment,Get a list of all comments.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Comment list is empty""
+}",GET,{List of comments}
+/api/tasks/overdue,Task,Get tasks that are overdue.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Task list is empty""
+}",GET,{List of task}
+/api/categories/all,Category,Get a list of all categories.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Category list is empty""
+}",GET,{List of categories}
+/api/notifications/update/{notificationId},Notification,Update notification details.,"{
+  ""code"": UPDTFAILS"",
+  ""message"":Notification doesn't exist exist""
+}",PUT,"{
+  ""code"": ""UPDATESUCCESS"",
+  ""message"": ""Notification updated successfully""
+}"
+/api/attachments/update/{attachmentId},Attachment,Update attachment details.,"{
+  ""code"": UPDTFAILS"",
+  ""message"":Attachment doesn't exist exist""
+}",PUT,"{
+  ""code"": ""UPDATESUCCESS"",
+  ""message"": ""Comment updated successfully""
+}"
+/api/userroles/all,UserRoles,Get a list of all user-role associations.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":UserRole list is empty""
+}",GET,{List of object of UserRole}
+/api/tasks/category/{categoryId},Task,Get tasks by category.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Task list is empty""
+}",GET,{List of task}
+/api/notifications/all,Notification,Get a list of all notifications.,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Attachment list is empty""
+}",GET,{List of object of Notification}
+/api/tasks/user/{userId}/status/{status},Task,Get tasks for a specific user and status,"{
+  ""code"": GETALLFAILS"",
+  ""message"":Task list is empty""
+}",GET,{List of task}
+,User,,,,
+/api/userroles/assign/assign,UserRoles,Assign a user role to a user.,"{
+  ""code"": ADDFAILS"",
+  ""message"":UserRole already exist""
+}",POST,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Userrole added successfully""
+}"
+/api/categories/{categoryId},Category,Get details of a specific category by ID.,"{
+  ""code"": GETFAILS"",
+  ""message"":category doesn't exist""
+}",GET,{Object of Catgory}
+/api/comments/delete/{commentId},Comment,Delete a comment.,"{
+  ""code"": DLTFAILS"",
+  ""message"":Comments doesn't exist exist""
+}",DELETE,"{
+  ""code"": ""DELETESUCCESS"",
+  ""message"": ""Comment deleted successfully""
+}"
+/api/userroles/post,User Role,Create a new user role.,"{
+  ""code"": ADDFAILS"",
+  ""message"":UserRoles already exist""
+}",POST,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""UserRoles added successfully""
+}"
+/api/users/email-domain/{domain},User,Get users with a specific email domain.,"{
+  ""code"": GETFAILS"",
+  ""message"":User doesn't exist exist""
+}",GET,{Object of list user }
+/api/taskcategories/{taskId},Task-category,Get all category for a particular task,"{
+  ""code"": GETFAILS"",
+  ""message"":No category found for a particular task""
+}",GET,{List of all category}
+/api/taskcategories/{categoryId},Task-category,Get all tasks for a particular task,"{
+  ""code"": GETFAILS"",
+  ""message"":No task found for a particular category""
+}",GET,{List of all task}

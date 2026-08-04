@@ -1,0 +1,81 @@
+﻿Endpoint,Category,Description,Error Response,Success Response,Type
+/api/ department /{deptid},Department,Search the department detail by dept Id,," Department",GET
+/api/department,Department,"Add new Department object in DB
+  ",,Record Created Successfully,POST
+/api/affiliated_with/post,AffliatedWith,Add a existing physician to affiliated_with Table,,String: Record Created Successfully,POST
+/api/department/,Department,Get the list of department,,Collection of Department,GET
+/api/physician/post,Physician,"Adds a new Physician ",,Record Created Successfully,POST
+/api/physician/name/{name},Physician,Search Physician detail by Name,,Physician,GET
+/api/physician/position/{pos},Physician,Search Physicians  by Position,,Collection of Physician,GET
+/api/physician/empid/{empid},Physician,Search Physician By EmpId,,Physician,GET
+/update/position/{position}/{employeeId},Physician,"Update Position Of Physician ","{""timeStamp"":""2023-06-08"", ""message"": ""Validation failed …”}",Physician,PUT
+/api/ physician /update/name/{empid},Physician,Update Name of an Physician,,Physician,PUT
+/api/ physician /update/ssn/{empid},Physician,Update SSN of a Physician,,Physician,PUT
+/api/department/head/{deptid},Department,Search the head of department details,,Physician,GET
+/api/department/headcertification/{deptid},Department,Search the head certification detail by deptid,,Collection of Certification,GET
+/api/ department /{head},Department,Search the list of department by head id (physician id),,Collection of Department,GET
+/api/ department /check/{physicianid},Department,Search whether a physician is head of any department or not,,Boolean,GET
+/api/ department /update/headid/{ deptid },Department,Update the department head id,,Department,PUT
+/api/ department /update/deptname/{ deptid },Department,Update the name of department,,Department,PUT
+/api/affiliated_with /countphysician/{deptid},AffliatedWith,Count total number of physician in a department,,int,GET
+/api/ affiliated_with /department/{physicianid},AffliatedWith,Search the list of department for a physician,,Collection of Department,GET
+/api/ affiliated_with /physicians/{deptid},AffliatedWith,Search a list of physician affiliated with particular department,,Collection of Physician,GET
+/api/ affiliated_with/primary/ /{physicianid}/,AffliatedWith,Search the primary affiliation of physician,,boolean,GET
+/api/ affiliated_with/primary/ /{physicianid}/,AffliatedWith,Update the primary affiliation of physician,,boolean,GET
+/api/procedure,Procedure,Add a new treatment (procedure) to DB,,String: Record Created Successfully,POST
+/api/ procedure/,Procedure,Get a list of available Treatment,,List of Procedure,GET
+/api/procedure/cost/{id},Procedure,Get the cost of procedure by id,,Procedure,GET
+/api/procedure/cost/{name},Procedure,Search the cost of procedure by name,,Procedure,GET
+/api/procedure/cost/id,Procedure,Update the cost of procedure,,Procedure,PUT
+/api/procedure/name/{id},Procedure,Update the name of Procedure,,Procedure,PUT
+/api/trained_in,TrainedIn,Add a certification to a DB,,String: Record Created Successfully,POST
+/api/trained_in/,TrainedIn,Get a list of Procedure available with certification,,Collection of Procedure,GET
+"/api/trained_in/treatment/
+{physicianid}",TrainedIn,Get a list of treatment can be done by particular physician,,Collection of Procedure,GET
+"/api/trained_in/physicians/
+{procedureid}",TrainedIn,Get a list of physician for a particular treatment,,Collection of Physician,GET
+"/api/trained_in/expiredsooncerti/
+{physicianid}",TrainedIn,Get a list of Procedure whose certification expire within a month,,Collection of Procedure,GET
+"/api/trained_in/certificationexpiry/
+{physicianid&procedureid}",TrainedIn,Update the certification expiry date in the basis if physician id and procedureid,,boolean,PUT
+api/patient,Patient,Add a patient report to the DB,,String: Record Created Successfully,POST
+api/patient/,Patient,Get a list of Patient,,Collection of Patient,GET
+api/patient/{physicianid},Patient,Get a list of patient who is check by a particular physicians,,Collection of Patient,GET
+api/patient/{physicianid}/{patientid},Patient,Get detail of patient checked by a particular physician,,Patient,GET
+api/patient/insurance/{patientid},Patient,Get the insuranceid of patient,,Int,GET
+api/patient/address/{SSN},Patient,Update the address of a patient by using SSN,,Patient,PUT
+api/patient/phone/{SSN},Patient,Update the phone of a patient by using SSN,,Patient,PUT
+api/nurse,Nurse,Add a nurse detail to DB,,String: Record Created Successfully,POST
+api/nurse/,Nurse,Get a list of nurse,,Collection of nurse object,GET
+api/nurse/{empid},Nurse,Get a detail of nurse by employeeid,,Nurse,GET
+api/nurse/position/{empid},Nurse,Get position of nurse by employeeid,,String,GET
+api/nurse/registered/{empid},Nurse,Get about a nurse is registered or not,,boolean,GET
+api/nurse/registered/{empid},Nurse,Update the value of registered by employeeid,,Nurse,PUT
+api/nurse/ssn/{empid},Nurse,Update the value of SSN by empid,,Nurse,PUT
+api/appointment/,Appointment,Add a appointment detail to DB,,String: Record Created Successfully,POST
+api/ appointment,Appointment,Get a list of appointment,,Collection of Appointment,GET
+api/ appointment/{startdate},Appointment,Get a list of appointment by startdate,,Collection of appointment,GET
+api/ appointment/patient/{appointmentid},Appointment,Search a patient information by appointment id,,Patient,GET
+api/ appointment/physician/{appointmentid},Appointment,Search a physician detail by appointment id,,Physician,GET
+api/ appointment/nurse/{appointementid},Appointment,Search a nurse detail by appointment id,,Nurse,GET
+api/ appointment/ examinationroom/{appointmentid},Appointment,Search a examination room detail by appointment id,,Room,GET
+api/ appointment/physician/{patientid},Appointment,Get a list of physician by patient id,,Collection of Physician,GET
+api/ appointment/physician/{patientid}/{date},Appointment,Get a physician detail by patient id on a particular date,,Physician,GET
+api/ appointment/nurse/{patientid},Appointment,Get a list of Nurse by patient id,,Collection of Nurse,GET
+api/ appointment/nurse/{patientid}/{date},Appointment,Get a physician detail by Nurse id on a particular date,,Nurse,GET
+api/appointment/date/{patientid},Appointment,Get a list of dates on which a patient has an appointment,,Collection of Date,GET
+api/appointment/patient/{physicianid},Appointment,Get a list of patient checked by physician,,Collection of Patient,GET
+"api/appointment/patient/{physicianid}/
+{date}",Appointment,Get a list of patient checked by physician on particular date,,Collection of Patient,GET
+"api/appointment/patient/{physicianid}
+/{patientid}",Appointment,Get about a patient checked by physician by patient id,,Patient,GET
+api/appointment/patient/{nurseid},Appointment,Get a list of patient checked by nurse,,Collection of Patient,GET
+"api/appointment/patient/{nurseid}
+/{patientid}",Appointment,Get about a patient checked by nurse by patient id,,Patient,GET
+"api/appointment/patient/{nurseid}/
+{date}",Appointment,Get a list of patient checked by Nurse on particular date,,Collection of Patient,GET
+api/appointment/room/{patientid}/{date},Appointment,Get room details by patient id on a particular date,,Room,GET
+api/appointment/room/{physicianid}/{date},Appointment,Get a list of room details by physician id on a particular date,,Collection of Room,GET
+api/appointment/room/{nurseid}/{date},Appointment,Get a list of room details by Nurse id on a particular date,,Collection of Room,GET
+api/appointment/room/{appintmentid},Appointment,Update a examination room by appointment id,,Room,PUT
+,,,,,

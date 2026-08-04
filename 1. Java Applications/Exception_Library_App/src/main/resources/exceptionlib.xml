@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExceptionLib>
+	<!-- ========================================================= -->
+	<!-- Project 1: OrderManagementSystem -->
+	<!-- ========================================================= -->
+	<Project name="OrderManagementSystem">
+
+		<!-- =============== MODULE: PaymentModule ================== -->
+		<module name="PaymentModule">
+			<exception name="PaymentFailedException">
+				<email to="paymentsupport@company.com"></email>
+				<log file="payments-errors.log"></log>
+				<sms phoneNumber="+919876543210"></sms>
+			</exception>
+
+			<exception name="InvalidCardException">
+				<email to="paymentsupport@company.com"></email>
+				<log file="payments-warnings.log"></log>
+			</exception>
+
+			<exception name="TransactionTimeoutException">
+				<email to="paymentsupport@company.com"></email>
+				<log file="payments-timeouts.log"></log>
+				
+			</exception>
+		</module>
+
+		<!-- =============== MODULE: InventoryModule ================ -->
+		<module name="InventoryModule">
+			<exception name="OutOfStockException">
+				<email to="inventoryops@company.com"></email>
+				<log file="inventory-events.log"></log>
+			</exception>
+
+			<exception name="InvalidSKUException">
+				<email to="inventoryops@company.com"></email>
+				<log file="inventory-errors.log"></log>
+			</exception>
+
+			<exception name="InventoryServiceUnavailable">
+				<email to="inventoryops@company.com"></email>
+				<log file="inventory-service.log"></log>
+				<sms phoneNumber="+919812345678"></sms>
+			</exception>
+		</module>
+
+		<!-- ================= MODULE: UserModule =================== -->
+		<module name="UserModule">
+			<exception name="UserNotFoundException">
+				<email to="usersupport@company.com"></email>
+				<log file="user-issues.log"></log>
+			</exception>
+
+			<exception name="InvalidCredentialsException">
+				<email to="usersupport@company.com"></email>
+				<log file="user-security.log"></log>
+			</exception>
+
+			<exception name="AccountLockedException">
+				<email to="usersupport@company.com"></email>
+				<log file="user-security.log"></log>
+				<sms phoneNumber="+919800000001"></sms>
+			</exception>
+		</module>
+
+	</Project>
+
+	<!-- ========================================================= -->
+	<!-- Project 2: HRPortal -->
+	<!-- ========================================================= -->
+	<Project name="HRPortal">
+
+		<!-- =============== MODULE: PayrollModule ================== -->
+		<module name="PayrollModule">
+			<exception name="SalaryProcessingException">
+				<email to="hrpayroll@company.com"></email>
+				<log file="hr-payroll-errors.log"></log>
+			</exception>
+
+			<exception name="TaxCalculationException">
+				<email to="hrpayroll@company.com"></email>
+				<log file="hr-tax.log"></log>
+			</exception>
+
+			<exception name="PayslipGenerationTimeout">
+				<email to="hrpayroll@company.com"></email>
+				<log file="hr-timeouts.log"></log>
+				<sms phoneNumber="+919800000010"></sms>
+			</exception>
+		</module>
+
+		<!-- =============== MODULE: RecruitmentModule ============== -->
+		<module name="RecruitmentModule">
+			<exception name="CandidateProfileNotFound">
+				<email to="hrexternal@company.com"></email>
+				<log file="hr-recruitment.log"></log>
+			</exception>
+
+			<exception name="DuplicateApplicationException">
+				<email to="hrexternal@company.com"></email>
+				<log file="hr-recruitment-warnings.log"></log>
+			</exception>
+
+			<exception name="OfferLetterDispatchException">
+				<email to="hrexternal@company.com"></email>
+				<log file="hr-offers.log"></log>
+				<sms phoneNumber="+919800000011"></sms>
+			</exception>
+		</module>
+
+		<!-- =============== MODULE: AttendanceModule =============== -->
+		<module name="AttendanceModule">
+			<exception name="SwipeDataMissingException">
+				<email to="hrattendance@company.com"></email>
+				<log file="hr-attendance.log"></log>
+			</exception>
+
+			<exception name="ShiftMappingException">
+				<email to="hrattendance@company.com"></email>
+				<log file="hr-attendance-errors.log"></log>
+			</exception>
+
+			<exception name="OvertimeApprovalException">
+				<email to="hrattendance@company.com"></email>
+				<log file="hr-attendance-approvals.log"></log>
+			</exception>
+		</module>
+
+	</Project>
+
+	<!-- ========================================================= -->
+	<!-- Project 3: CRM -->
+	<!-- ========================================================= -->
+	<Project name="CRM">
+
+		<!-- =============== MODULE: LeadModule ===================== -->
+		<module name="LeadModule">
+			<exception name="LeadAssignmentException">
+				<email to="crmops@company.com"></email>
+				<log file="crm-leads.log"></log>
+			</exception>
+
+			<exception name="DuplicateLeadException">
+				<email to="crmops@company.com"></email>
+				<log file="crm-leads-warnings.log"></log>
+			</exception>
+
+			<exception name="LeadImportFailure">
+				<email to="crmops@company.com"></email>
+				<log file="crm-import-errors.log"></log>
+				<sms phoneNumber="+919800000020"></sms>
+			</exception>
+		</module>
+
+		<!-- =============== MODULE: OpportunityModule ============== -->
+		<module name="OpportunityModule">
+			<exception name="QuoteGenerationException">
+				<email to="crmops@company.com"></email>
+				<log file="crm-opportunity.log"></log>
+			</exception>
+
+			<exception name="PricingRuleMismatchException">
+				<email to="crmops@company.com"></email>
+				<log file="crm-pricing.log"></log>
+			</exception>
+
+			<exception name="ApprovalTimeoutException">
+				<email to="crmops@company.com"></email>
+				<log file="crm-approvals.log"></log>
+				<sms phoneNumber="+919800000021"></sms>
+			</exception>
+		</module>
+
+		<!-- =============== MODULE: SupportModule ================== -->
+		<module name="SupportModule">
+			<exception name="TicketAssignmentException">
+				<email to="crmsupport@company.com"></email>
+				<log file="crm-support.log"></log>
+			</exception>
+
+			<exception name="SlaBreachException">
+				<email to="crmsupport@company.com"></email>
+				<log file="crm-sla.log"></log>
+				<sms phoneNumber="+919800000022"></sms>
+			</exception>
+
+			<exception name="NotificationDispatchException">
+				<email to="crmsupport@company.com"></email>
+				<log file="crm-notify.log"></log>
+			</exception>
+		</module>
+
+	</Project>
+</ExceptionLib>

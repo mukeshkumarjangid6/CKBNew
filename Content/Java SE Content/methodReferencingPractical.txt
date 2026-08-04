@@ -1,0 +1,20 @@
+public class MethodReferenceExample {
+
+    // A functional interface with a method that takes two strings and returns their concatenation
+    interface Concatenator {
+        String concatenate(String s1, String s2);
+    }
+
+    public static void main(String[] args) {
+        // Using a lambda expression
+        Concatenator lambdaConcatenator = (s1, s2) -> s1.concat(s2);
+        System.out.println(lambdaConcatenator.concatenate("Hello", "World"));
+
+        // Using method reference String::concat
+        Concatenator referenceConcatenator = String::concat;
+        System.out.println(referenceConcatenator.concatenate("Hello", "World"));
+
+        
+    }
+}
+

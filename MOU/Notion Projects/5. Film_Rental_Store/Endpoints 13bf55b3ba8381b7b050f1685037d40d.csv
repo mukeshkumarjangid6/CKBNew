@@ -1,0 +1,227 @@
+﻿Path URL,Description,Entity,HTTP Methods,Success Response
+/api/customers/inactive,Search all inactive Customers,Customer,GET,"Collection of Customers
+  "
+/api/films/update/releaseyear/{id},Update Release Year of a Film,Film,PUT," Film
+  "
+"/api/films/update/rating/{id}
+  ",Update  Rating of a Film,Film,PUT,"Film
+  "
+"/api/customers/lastname/{ln}
+  ",Search Customers by last name,Customer,GET,"Collection of Customers
+  "
+"/api/staff/lastname/{ln}
+  ",Search Staff by last name,Staff,GET,"Collection of Staff
+  "
+/api/customers/update/{id}/email,Update email of Customer,Customer,PUT," Customer
+  "
+/api/films/betweenyear/{from}/{to},Search  Films which are Released between {from} and {to},Film,GET,"Collection of Films
+  "
+/api/films/countbyyear,Display number of Films released  by each Year,Film,GET,"Year & Count of Films 
+  "
+" /api/staff/post
+",Add new Staff object to DB,Staff,POST,"String: Record Created Successfully
+  "
+"/api/rental/add
+  ",Rent a  Film,Rental,POST,"String: Record Created Successfully
+  "
+/api/films/update/language/{id},Update Language of a Film,Film,PUT,Film
+"/api/films/duration/lt/{rd}
+  ",Search Films where Rental Duration is lower than {rd},Film,GET,"Collection of Films
+  "
+/api/payment/add,Make one Payment entry,payment,PUT,"String: Record Created Successfully
+  "
+/api/films/{id}/actors,Find all Actors of a Film by Film id,Film,GET,"Collection of Actors
+  "
+/api/films/language/{lang},Search Films where Language is {lang},Film,GET,"Collection of Films
+  "
+"/api/films/rating/gt/{rating}
+  ",Search Films where Rating is  greater than {rating},Film,GET,"Collection of Films
+  "
+"/api/store/staff/{storeId}
+  ",Display all Staff of a Store,Store,GET,"Collection of Staff
+  "
+"/api/store/post
+  ",Add new Store object to DB,Store,POST,"String: Record Created Successfully
+  "
+"/api/inventory/add
+  ",Add one more Film to a Store,Inventory,POST,"String: Record Created Successfully
+  "
+"/api/films/year/{year}
+  ",Search Films by Release Year,Film,GET,"Collection of Films
+  "
+"/api/films/post
+  ",Add new Film object in DB,Film,POST,"String: Record Created Successfully
+  "
+"/api/inventory/film/{id}/store/{id}
+  ",Display inventory(count) of a Film in a Store,Inventory,GET,"Store Address, no. of copies
+  "
+"/api/customers/email/{email}
+  ",Search Customers by email,Customer,GET,"Customer
+  "
+/api/payment/revenue/datewise/store/{id},Calculate Cumulative revenue of a Store,payment,GET,"Collection of payment_date, amount"
+"/api/staff/update/phone/{id}
+  ",Update phone number of a Staff,Staff,PUT,"Staff
+  "
+"/api/rental/update/returndate/{id}
+  ",Update return date,Rental,POST,"Rental
+  "
+"/api/store/manager/{storeId}
+  ",Display Manager Details of a Store,Store,GET,"Staff
+  "
+"/api/films/length/gt/{length}
+  ",Search Films where Length is greater than {length},Film,GET,"Collection of Films
+  "
+"/api/actors/{id}/films
+  ",Search Films of an Actor by Actor Id,Actors,GET," Collection of Films
+  "
+"/api/staff/phone/{phone}
+  ",Search Staff by phone number,Staff,GET,"Staff with Address
+  "
+"/api/store/phone/{phone}
+  ",Search Store by phone number,Store,GET,"Store with Address
+  "
+/api/staff/country/{country},Search Customers by Country,Staff,GET,"Collection of Staff with Address
+  "
+/api/customers/update/{id}/{fn},Update first name of Customer.,Customer,PUT,Customer
+/api/films/update/rentalrate/{id},Update Rental Rate of a Film,Film,PUT," Film"
+"  /api/actors/{id}/film
+",Assign Film to an Actor,Actors,PUT,"Collection of Films
+  "
+"/api/staff/firstname/{fn}
+  ",Search Staff by first name,Staff,GET,"Collection of Staff
+  "
+"/api/payment/revenue/films/store/{id}
+  ",Calculate Cumulative revenue of all Films by Store,payment,GET,"Collection Film title, amount
+  "
+"/api/films/update/title/{id}
+  ",Update Title of a Film,Film,PUT,"Film
+  "
+" /api/rental/due/store/{id}
+",Display list of Customers who have not yet returned the  Film,Rental,GET,"Collection of Customers
+  "
+/api/customers/country/{country},Search Customers by Country,Customer,GET,"Collection of Customers with Address
+  "
+"/api/payment/revenue/datewise
+  ",Calculate Cumulative revenue of all Stores,payment,GET,"Collection of payment_date, amount
+  "
+"/api/films/rating/lt/{rating}
+  ",Search Films where Rating is lower than {rating},Film,GET,"Collection of Films
+  "
+"/api/staff/update/store/{id}
+  ",Assign Store to a Staff,Staff,PUT,"Staff
+  "
+"/api/rental/toptenfilms/store/{id}
+  ",Display top 10 most rented Films of a Store,Rental,GET,"Collection of Films
+  "
+"/api/actors/firstname/{fn}
+  ",Search Actors by First Name,Actors,GET,"Collection of Actors
+  "
+"/api/films/title/{title}
+  ",Search Films by Title,Film,GET,"Collection of Films
+  "
+"/api/actors/lastname/{ln}
+  ",Search Actors by Last Name,Actors,GET,"Collection of Actors
+  "
+"/api/Staff/{id}/address
+  ",Assign Address to a Staff,Staff,PUT,"Staff & Address details
+  "
+"/api/staff/update/ln/{id}
+  ",Update last name of Staff,Staff,PUT,"Staff
+  "
+"/api/films/rate/lt/{rate}
+  ",Search Films where Rental Rate  is lower than {rate},Film,GET,"Collection of Films
+  "
+"/api/staff/update/email/{id}
+  ",Update email of Staff,Staff,PUT,"Staff
+  "
+/api/customers/city/{city),Search Customers by City,Customer,GET,"Collection of Customers with Address
+  "
+/api/films/update/category/{id},Update Category of a Film,Film,PUT,"Film
+  "
+"/api/actors/post
+  ",Add new Actor object in DB,Actors,POST,"String: Record Created Successfully
+  "
+"/api/staff/city/{city}
+  ",Search Staff by City,Staff,GET,"Collection of Staff with Address
+  "
+/api/customers/active,Search all active Customers,Customer,GET,"Collection of Customers
+  "
+"/api/payment/revenue/film/{id}
+  ",Calculate Cumulative revenue of a Film Store wise,payment,GET,"Collection of Store address, amount
+  "
+"/api/store/managers 
+  ","Display Manager details (first name, last name, email,  phone) and Store details (Address, City, Phone) of all stores",Store,GET,"Custom Object
+  "
+/api/store/country/{country},Search Store by Country,Store,GET," Collection of Store with Address
+  "
+"/api/actors/toptenbyfilmcount
+  ",Find top 10 Actors by Film Count,Actors,GET,"Id & Name of Actors with Number of Films
+  "
+/api/customers/phone/{phone},Search Customers by phone number,Customer,GET,Customer with Address
+/api/customers/firstname/{fn},Search Customers by first name,Customer,GET,Collection of Customers
+"/api/inventory/films
+  ",Display inventory(count) of all Films in all Stores,Inventory,GET,"Collection of Film title, no. of copies
+  "
+/api/store/{storeId}/address/{addressId},Assign Address to a Store,Store,PUT,"Store & Address details
+  "
+/api/store/update/{storeId}/{phone},Update phone number of a Store,Store,PUT,"Store
+  "
+"/api/customers/post
+  ",Add new Customer Object in DB,Customer,POST,"String: Record Created Successfully
+  "
+/api/customers/update/{id}/store,Assign Store to a Customer,Customer,PUT,Customer
+"/api/films/length/lt/{length}
+  ",Search Films where Length is  lower than {length},Film,GET,"Collection of Films
+  "
+"  /api/films/rate/gt/{rate}
+  ",Search Films where Rental Rate is greater than {rate},Film,GET,Collection of Films
+"/api/inventory/store/{id}
+  ",Display inventory of all Films by a Store,Inventory,GET,"Collection of Film title, no. of copies
+  "
+"/api/inventory/film/{id}
+  ",Display inventory(count) of a Film in all Stores,Inventory,GET,"Collection of Store address, no. of copies
+  "
+"/api/films/{id}/actor
+  ",Assign  Actor to a Film,Film,PUT,"Collection of Actors
+  "
+"/api/actors/update/lastname/{id}
+  ",Update Last Name of an Actor,Actors,PUT,Actor
+"/api/rental/customer/{id}
+  ",Display all Films rented to a customer,Rental,GET,"Collection of Films
+  "
+"/api/films/duration/gt/{rd}
+  ",Search Films where Rental Duration is greater than {rd},Film,GET,"Collection of Films
+  "
+"/api/payment/revenue/filmwise/
+  ",Calculate Cumulative revenue of all Films (across all  stores),payment,GET,"Collection of Film title, amount
+  "
+/api/films/update/rentaldurtion/{id},Update Rental Duration of a Film,Film,PUT,"Film
+  "
+"/api/rental/toptenfilms
+  ",Display top 10 most rented Films,Rental,GET,"Collection of Films
+  "
+/api/customers/update/{id}/phone,Update phone number of a Customer,Customer,PUT,"Customer
+  "
+"/api/staff/update/fn/{id}
+  ",Update first name of Staff,Staff,PUT,"Staff
+  "
+/api/films/category/{category},Find all Films of specified  {category},Film,GET,"Collection of Films
+  "
+/api/customers/{id}/{addressId},Assign Address to a Customer,Customer,PUT,"Customer & Address details
+  "
+/api/store/{storeId}/manager/{manager_staff_id},Assign manager to a Store,Store,PUT,"Store & Address details
+  "
+/api/customers/update/{id}/ln,Update last name of Customer,Customer,PUT,"Customer
+  "
+"/api/actors/update/firstname/{id}
+  ",Update First Name of an Actor,Actors,PUT," Actor
+"
+"/api/staff/email/{email}
+  ",Search Staff by email,Staff,GET,"Staff
+  "
+"/api/store/city/{city}
+  ",Search Store by City,Store,GET,"Collection of Store with Address
+  "
+"  /api/store/customer/{storeId}
+  ",Display all Customers of a Store,Store,GET,"Collection of Customers
+  "

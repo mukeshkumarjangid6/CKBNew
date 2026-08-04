@@ -1,0 +1,139 @@
+Docker Compose:
+https://youtu.be/Ofae28_lkxM
+https://youtu.be/-7b_jG9RY78
+
+
+
+
+Docker is a container tool.
+Create docker images for each microservices.
+Docker image contain everything a application needs to run:
+-Application runtime (JDK, Python, NodeJS),
+-Application Code,
+-Dependencies.
+--------------------------------------------------------------
+What is the containerization?	Done
+--------------------------------------------------------------
+Create the account for Docker Playground by the following link:	Done
+https://www.docker.com/play-with-docker/
+
+Explore the following URL:
+https://hub.docker.com/
+See the images available on the above mention-mention website.
+--------------------------------------------------------------
+hello-world docker example:
+How the following command works:
+docker run hello-world (hello-world is a already defined image on https://hub.docker.com/, It will download and create the container for the image.)
+--------------------------------------------------------------
+docker Pull command:	Done
+
+How the following command works:
+docker pull imageName
+such as 
+docker pull nginx
+or
+docker pull nginx:1.29.4-alpine
+
+How the following command works:
+docker images
+
+docker run vs docker pull commands
+--------------------------------------------------------------
+Docker import & export:		Done
+How the following command works:
+docker run -it ubuntu /bin/bash
+
+here -it will forward the docker terminal to ubuntu bash.
+then type ls command.
+
+then mkdir demo then ls command.
+
+Flow: Use base image->Create container for it->you will work in it-> You can share your credit work with your teammates.
+
+If you want that the container will run in background then press ctrl+p+q.
+Then show the running container using:
+docker container list
+
+export the container:
+docker export container_id > myUbuntu.zip
+
+then ls
+
+Import the container:
+docker import - myub < myUbuntu.zip
+
+Show images list:
+docker images
+ 
+Run the imported image:
+docker run -it myub /bin/bash
+
+then ls
+
+Now the created folders inside the imported image will show.
+--------------------------------------------------------------
+Command line options: Open Port(Docker run port option):
+docker run hacstac/react-example
+
+Exit from running  by react example  via pressing ctrl+c
+
+Explain the following:
+docker run -p 80:80 image-name
+
+Now:
+docker run -p 8080:80 hacstac/react-example
+
+docker run -p <HOST_PORT>:<CONTAINER_PORT> <image>
+Click on open port then enter 8080, react app will appear.
+--------------------------------------------------------------
+Command line options - Memory:
+docker run -p 8080:80 -m 6M hacstac/react-example (This is not required memory to run react application, and will create the problem).
+Run the command with different memory option:
+docker run -p 8080:80 -m 6000M hacstac/react-example (This time the react application will run).
+--------------------------------------------------------------
+Command line options - Detach:
+Explain the following command:
+docker run -d image-name
+
+The following command will run the react application in background on terminal so that you can use the terminal for other purpose.
+--------------------------------------------------------------
+Container Command Line:
+Access command prompt of running container:
+
+Scenario is docker is installing ubuntu, In ubuntu shell, we want to install node or React by npm install using ubuntu terminal.
+
+Command:
+docker run -d nginx
+
+docker container list
+
+docker exec -t container_id bash
+
+Launched the container with terminal access.
+
+docker stop 
+--------------------------------------------------------------
+docker cloud cmd to local CMD:
+ssh-keygen
+
+ssh -i demo1 [ssh of docker playground]
+
+after connection, execute mkdir demo then ls in docker playground cloud cmd.
+--------------------------------------------------------------
+Docker writable layer:
+In the current container if add some configuration or dependencies, can not shre thase details to other container.
+-Data is not sharable.
+-Storage is not permanent.
+Solution are: bind mount, volume, tmpfs mount.
+--------------------------------------------------------------
+Bind Mount:
+
+--------------------------------------------------------------
+Some Common commands:
+docker ps
+docker container ls
+docker ps -a
+docker ps -q
+docker ps -aq
+
+https://www.youtube.com/watch?v=gEy3l67ii6g&list=PLRnkc1xoj4sonKYywJGTvJ7QA6VVrXgJc

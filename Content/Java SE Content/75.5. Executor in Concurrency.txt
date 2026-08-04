@@ -1,0 +1,56 @@
+package concurrentSquareCalculator;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+class ConcurrentSquareCalculator {
+	ExecutorService executor;
+	int[] numbers = { 1, 2, 3, 4, 5 };
+
+	public ConcurrentSquareCalculator() {
+		// Create an ExecutorService using Executors.newFixedThreadPool(4).
+		// This creates a thread pool with four worker threads.
+		executor = Executors.newFixedThreadPool(4);
+	}
+
+	public void pro1() {
+		for (int num : numbers) {
+			// Submit a task to calculate the square of a number.
+			// The submit(Callable obj) method returns a Future object that allows us to retrieve the
+			// result when it's ready.
+			Future<Integer> result = (Future<Integer>) executor.submit(() -> calculateSquare(num));
+
+			// Print the result when the calculation is complete.
+			try {
+				// Use result.get() to retrieve the calculated square of each number when the
+				// task is complete.
+				System.out.println("Square of " + num + ": " + result.get());
+				System.out.println(result.isDone());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+		// Shutdown the executor when done.
+		executor.shutdown();
+	}
+
+	private static int calculateSquare(int number) {
+		try {
+			// Simulate some time-consuming calculation
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+		}
+		return number * number;
+	}
+}
+
+public class App {
+	public static void main(String[] args) {
+		// Create an instance of ConcurrentSquareCalculator and run pro1() method.
+		new ConcurrentSquareCalculator().pro1();
+	}
+}
+

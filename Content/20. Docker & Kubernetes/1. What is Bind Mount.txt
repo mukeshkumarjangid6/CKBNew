@@ -1,0 +1,208 @@
+1. What is Bind Mount?
+Create an folder with name of demo in local machine/host machine.
+Run the following command:
+docker run --name=test1 -it --mount type=bind,source="$(pwd)/demo",target=/test1 ubuntu:14.04 bash
+Name of the container =--name=test1
+target is folder reference (test1) which you want to bind with src folder. test1 will automatically create if not exist.
+Create a demo.txt file using touch command and one folder with the name of testdir in test1 folder of container.
+Press ctrl p q to exit from current container.
+Navigate to demo folder and execute the command ls(All the files will be there, which has created in container test1 folder).
+If the container stop or removed the demo data in local machine/host machine will be available.
+----------------------------------------------------------------------------
+2. What is volumes?
+docker volume ls
+docker volumne create my_vol
+
+By executing the following command, you can see in mountpoint that docker decided that path:
+docker inspect my_vol
+
+Run the following command:
+docker run --name=test1 -it  --mount source=my_vol, target=/test1 ubuntu:14.04 bash
+
+cd test1 in container.
+mkdir demo
+mkdir test1.txt
+mkdir test2.txt
+ls
+
+Then exit using ctrl p q
+
+docker volumn ls
+docker inspect my_vol
+
+Copy and paste the mountpoint path with cd command. (ctrl insert and then Shift insert) then ls, You will find the folders that is created in container test1 folder.
+
+If I run the following command, the my_vol_test will create automatically:
+docker run --name=test1 -it  --mount source=my_vol_test, target=/test1 ubuntu:14.04 bash
+----------------------------------------------------------------------------
+1. Dockerfile first code:
+mkdir demo-app
+cd demo-app
+
+touch Dockerfile (Can change the name but will be complicated the process).
+open this file using vi or nano editor & type:
+From ubuntu:latest
+Save then navigate to docker terminal.
+
+Check that, you are in the same directory where Dockerfile exist & execute the following command to build:
+docker build .
+----------------------------------------------------------------------------
+2. Copy Instructions:
+Create a app folder in root and create server.js & index.js in app folder. Come back to root directory.
+Create a Dockerfile & add the following lines:
+
+From ubuntu:latest
+COPY ./app . (The following command will copy the content to root directory of  ubuntu container.)
+
+Run the following command on the root terminal:
+docker build -t demo1 . (demo1 is a tag name).
+
+check the existing images:
+docker images
+
+docker run -it demo1 bin/bash
+
+In the ubuntu terminal execute the ls command to see the copied files.
+----------------------------------------------------------------------------
+3. Add Instructions:
+Create a Dockerfile (touch Dockerfile) & add the following lines:
+From ubuntu:latest
+ADD (online zip folder url) .
+
+Exit and execute the following command:
+docker build -t demo1 .
+then
+docker images
+
+docker run -it demo1 bin/bash
+
+In the terminal of ubuntu, execute the ls command, the zip file is available in the ubuntu container.
+----------------------------------------------------------------------------
+4. run Instructions:
+Create a Dockerfile (touch Dockerfile) & add the following lines:
+From ubuntu:latest
+Run apt-get update
+Run apt-get install nodejs -y (Just to bypass all yes or no instructions).
+
+save it and come back to root directory.
+
+Execute the following command to build the image:
+docker build -t img1 . (img1 is a tag)
+
+While building the command, the terminal also execute the Run Instructions written in the Dockerfile.
+
+Then execute the docker images command to display the images.
+
+Execute the following command:
+docker run -it img1 bin/bash
+node -v
+
+Exit and execute the following command and observe the layers:
+docker inspect img1
+
+Docker always suggest to use less number of layers.
+To do that in our Dockerfile, combined the two Run instructions:
+From ubuntu:latest
+Run apt-get update && apt-get install nodejs -y
+----------------------------------------------------------------------------
+1. Docker Network:
+Execute the following command:
+docker network list
+
+The container will attach to the default network that is bridge network but docker suggest to use own network.
+
+docker run -dit --name demo1 ubuntu bin/bash
+docker inspect [bridge network id]
+
+Create custom bridge network:
+docker network create -d bridge my_net
+docker network list
+
+By executing the following command, we can observe that the container sectionhas no entry, that means that this network is not container assigned.
+docker inspect [my_net_ID]
+
+Execute the following command to assign the container to own network:
+docker run -dit --name demo2 --network my_net ubuntu bin/bash
+
+docker inspect [my_net_ID]
+----------------------------------------------------------------------------
+Bridge Network:
+docker network create -d bridge my_net
+
+docker run -dit -p  8080:8080 --name app1 mrnabilnoh/docker_web_app
+
+docker run -dit -p  8081:8080 --name app2 --network=my_net mrnabilnoh/docker_web_app
+
+docker run -dit --name ub1 --network=my_net ubuntu: 14.04 bin/bash
+
+docker inspect [bridge_network_ID]
+docker inspect [my_net_ID]
+
+docker attach ub1 (to navigate inside ubuntu terminal).
+
+Execute the following command:
+ping [IPv4Address] (IPv4Address of the app2 container which is associated with my_net network).
+
+If try to ping app1 container that has default network (Other than ubuntu container network)
+ping [IPv4Address] (IPv4Address of the app1 container which is not associated with my_net network).
+
+
+We learnt that we our containers are on the same network, then we can access the container.
+----------------------------------------------------------------------------
+Host Network:
+
+Bridge network is a default network.
+
+Execute the following command:
+docker run --name bridge1 -it ubuntu:latest bash
+ctrl+p+q for exit from container terminal.
+
+docker run --name host1 --network host -it ubuntu:latest bash
+ctrl+p+q for exit from container terminal.
+
+docker container list
+
+Execute the following command and see the IP address:
+docker inspect [container1Id]
+docker inspect [container2Id]
+
+The container which is associated with host network is not having IPAddress because host IP address and this container's will be same.
+
+Example:
+docker run --name reactapp --network host hacstac/react-example
+
+Open port and enter 80
+
+You can observe that if we donot expose the port number 3000 still we can access the content.
+----------------------------------------------------------------------------
+https://www.udemy.com/course/docker-for-java-developer/
+
+https://www.udemy.com/course/docker-for-beginners-j/
+----------------------------------------------------------------------------
+What is Containerization?
+3:24 How does docker work?
+9:13 Difference between Monolithic and Microservices
+19:10 How to use docker for free? zero setup
+26:51 Hello World Docker example
+31:49 Docker pull command
+35:30 Docker Import/Export
+43:59 Docker run port option
+01:01 Connect Clod CMD
+01:09 What is the Docker Writable layer?
+01:14  What is Bind Mount?
+01:26 What are Volumes? 
+01:39 Dockerfile First Code
+01:47 Dockerfile COPY instruction
+01:52 Dockerfile ADD instruction
+01:58 Dockerfile RUN instruction
+02:05 Docker network
+02:12 Docker Bridge network
+02:22 Docker Host network
+
+02:34 What is Docker Swarm?
+02:40 Swarm init
+02:42 Swarm Join
+02:48 Swarm Service
+02:59 Visualize swarm
+03:07 Scale Swarm
+03:10 Rolling updates

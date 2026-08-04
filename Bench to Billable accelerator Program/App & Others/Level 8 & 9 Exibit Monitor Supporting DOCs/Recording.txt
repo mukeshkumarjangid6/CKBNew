@@ -1,0 +1,21 @@
+Part 1:
+Exibit:
+Project folder and keep the files there only (3 types of files).
+One pooler thread will check new file came or nor and with 3 sec cycle and check validate the file.
+YML/xml for path configuring filename and type and input path of the file and need to take care about processing folder (only have validate file) path.
+need to set the time and grace time and the pooler tread will check the file with validation and not dublicate on the same day but can be accept on second day and put the file into processing folder.
+
+worker thread for second part like valid and invalid processing folder.
+-----------------------------------------------------------------------------
+
+24 Feb:
+https://teams.microsoft.com/l/meetingrecap?driveId=b%21R6yrxsXCG0WnWlEMouTBDl9gjSsF1e5Br8FydbOEUjoKZDhyRq0jQq-jqVP4X8mc&driveItemId=01TVB3LUV52SATR2EHWFH2LTL3GYIY6WIA&sitePath=https%3A%2F%2Fcapgemini-my.sharepoint.com%2F%3Av%3A%2Fp%2Fmedha-prahladrao_joshi%2FIQC91IE46IexT6XNezYRj1kAAQN7pk0Edek7YLA_lGOO7dQ&fileUrl=https%3A%2F%2Fcapgemini-my.sharepoint.com%2F%3Av%3A%2Fp%2Fmedha-prahladrao_joshi%2FIQC91IE46IexT6XNezYRj1kAAQN7pk0Edek7YLA_lGOO7dQ&iCalUid=040000008200E00074C5B7101A82E00800000000B00FBDE4B8A2DC01000000000000000010000000D2727AC6A1DAA24FB00FA10477BC25BF&threadId=19%3Ameeting_OTk0ZjY3ODItNTMzMS00NjhiLTkwNjYtMWU0MmMyODJkN2Uw%40thread.v2&organizerId=b9a2f118-6d44-4bc5-87fe-2f2d30593ca9&tenantId=76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61&callId=87018fe7-ebd0-4f4b-82dc-51d78c637938&threadType=Meeting&meetingType=Scheduled&subType=RecapSharingLink_RecapChiclet
+
+25 Feb:
+https://teams.microsoft.com/l/meetingrecap?driveId=b%21R6yrxsXCG0WnWlEMouTBDl9gjSsF1e5Br8FydbOEUjoKZDhyRq0jQq-jqVP4X8mc&driveItemId=01TVB3LUUQJ3W2C6X7OVAYQMG7BINHM2ZY&sitePath=https%3A%2F%2Fcapgemini-my.sharepoint.com%2F%3Av%3A%2Fp%2Fmedha-prahladrao_joshi%2FIQCQTu2hev91QYgw3woadms4AYdP2KDfcO345y1fmQiu6us&fileUrl=https%3A%2F%2Fcapgemini-my.sharepoint.com%2F%3Av%3A%2Fp%2Fmedha-prahladrao_joshi%2FIQCQTu2hev91QYgw3woadms4AYdP2KDfcO345y1fmQiu6us&iCalUid=040000008200E00074C5B7101A82E00800000000B00FBDE4B8A2DC01000000000000000010000000D2727AC6A1DAA24FB00FA10477BC25BF&threadId=19%3Ameeting_OTk0ZjY3ODItNTMzMS00NjhiLTkwNjYtMWU0MmMyODJkN2Uw%40thread.v2&organizerId=b9a2f118-6d44-4bc5-87fe-2f2d30593ca9&tenantId=76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61&callId=1b70ce33-f438-4d98-8bbe-bab2f00dec0b&threadType=Meeting&meetingType=Scheduled&subType=RecapSharingLink_RecapChiclet
+
+27 Feb:
+https://teams.microsoft.com/l/meetingrecap?driveId=b%21R6yrxsXCG0WnWlEMouTBDl9gjSsF1e5Br8FydbOEUjoKZDhyRq0jQq-jqVP4X8mc&driveItemId=01TVB3LUUXGSELKJY6JZEL6SDHAVKRQKQE&sitePath=https%3A%2F%2Fcapgemini-my.sharepoint.com%2F%3Av%3A%2Fp%2Fmedha-prahladrao_joshi%2FIQCXNIi1Jx5OSL9IZwVVGCoEAc20ZXnArlXww7J223K99Gg&fileUrl=https%3A%2F%2Fcapgemini-my.sharepoint.com%2F%3Av%3A%2Fp%2Fmedha-prahladrao_joshi%2FIQCXNIi1Jx5OSL9IZwVVGCoEAc20ZXnArlXww7J223K99Gg&iCalUid=040000008200E00074C5B7101A82E00800000000B00FBDE4B8A2DC01000000000000000010000000D2727AC6A1DAA24FB00FA10477BC25BF&threadId=19%3Ameeting_OTk0ZjY3ODItNTMzMS00NjhiLTkwNjYtMWU0MmMyODJkN2Uw%40thread.v2&organizerId=b9a2f118-6d44-4bc5-87fe-2f2d30593ca9&tenantId=76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61&callId=b9f9ecee-e351-4313-9479-ae76015468c6&threadType=Meeting&meetingType=Scheduled&subType=RecapSharingLink_RecapChiclet
+
+4 March:
+https://teams.microsoft.com/l/meetingrecap?driveId=b%21R6yrxsXCG0WnWlEMouTBDl9gjSsF1e5Br8FydbOEUjoKZDhyRq0jQq-jqVP4X8mc&driveItemId=01TVB3LUQGTN3KIAZBOZFZ7GDYE4YSEX6Q&sitePath=https%3A%2F%2Fcapgemini-my.sharepoint.com%2F%3Av%3A%2Fp%2Fmedha-prahladrao_joshi%2FIQAGm3akAyF2S5-YeCcxIl_QAUrl-STT79CvEP-N0SkO8N0&fileUrl=https%3A%2F%2Fcapgemini-my.sharepoint.com%2F%3Av%3A%2Fp%2Fmedha-prahladrao_joshi%2FIQAGm3akAyF2S5-YeCcxIl_QAUrl-STT79CvEP-N0SkO8N0&iCalUid=040000008200E00074C5B7101A82E00800000000B00FBDE4B8A2DC01000000000000000010000000D2727AC6A1DAA24FB00FA10477BC25BF&threadId=19%3Ameeting_OTk0ZjY3ODItNTMzMS00NjhiLTkwNjYtMWU0MmMyODJkN2Uw%40thread.v2&organizerId=b9a2f118-6d44-4bc5-87fe-2f2d30593ca9&tenantId=76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61&callId=3460d4e2-121f-4f57-a7aa-fd0ee01f1133&threadType=Meeting&meetingType=Scheduled&subType=RecapSharingLink_RecapChiclet

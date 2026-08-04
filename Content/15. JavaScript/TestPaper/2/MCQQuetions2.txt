@@ -1,0 +1,164 @@
+What is the correct way to check if a variable x is of type "function"?
+a) typeof x === "function"
+b) x instanceof Function
+c) x.constructor === Function
+d) All of the above
+Answer: d
+
+What does the "=== "operator do in JavaScript?
+a) Checks for equality, allowing type coercion
+b) Checks for equality, without type coercion
+c) Checks for inequality, allowing type coercion
+d) Checks for inequality, without type coercion
+Answer: b
+
+What is the output of the following code snippet?
+console.log(typeof NaN);
+a) number
+b) NaN
+c) undefined
+d) string
+Answer: a
+
+What does the "this" keyword refer to in JavaScript?
+a) It refers to the current object
+b) It refers to the parent object
+c) It refers to the global object
+d) It refers to the function itself
+Answer: a
+
+What is the correct way to create a new object in JavaScript?
+a) var obj = new Object();
+b) var obj = {};
+c) var obj = Object.create();
+d) All of the above
+Answer: d
+
+What is the output of the following code snippet?
+console.log(1 + "1" - 1);
+a) 0
+b) 1
+c) "10"
+d) NaN
+Answer: c
+
+Which function is used to convert a string to an integer in JavaScript?
+a) parseInt()
+b) parseFloat()
+c) toInt()
+d) Number()
+Answer: a
+
+What is the output of the following code snippet?
+console.log(3 > 2 > 1);
+a) true
+b) false
+c) TypeError
+d) NaN
+Answer: b
+
+What is the correct way to declare a JavaScript function?
+a) function myFunction() {}
+b) var myFunction = function() {}
+c) const myFunction = () => {}
+d) All of the above
+Answer: d
+
+What is the output of the following code snippet?
+console.log(typeof null);
+a) null
+b) object
+c) undefined
+d) boolean
+Answer: b) "object"
+
+Which operator is used to concatenate two strings in JavaScript?
+a) +
+b) ,
+c) &
+d) |
+Answer: a) "+"
+
+What is the output of the following code snippet?
+console.log(typeof []);
+a) array
+b) object
+c) undefined
+d) SyntaxError
+Answer: b) "object"
+
+How do you access the length of an array called "myArray" in JavaScript?
+a) myArray.length
+b) myArray.size
+c) myArray.count
+d) myArray.length()
+Answer: a) myArray.length
+
+What will be the output of the following code?
+console.log(10 > 5 && 5 < 3);
+a) true
+b) false
+c) 1
+d) Error
+Answer: b) false
+
+What will be the output of the following code?
+var x = 5;
+console.log(x++);
+a) 4
+b) 5
+c) 6
+d) Error
+Answer: b) 5
+
+Which method is used to find the index of the first occurrence of a value in an array?
+a) find()
+b) search()
+c) indexOf()
+d) locate()
+Answer: c) indexOf()
+
+How do you check if a variable is an array in JavaScript?
+a) isArray(variable)
+b) isArr(variable)
+c) variable.isArray()
+d) variable.isArr()
+Answer: a) isArray(variable)
+
+Which keyword is used to prevent a variable from being modified in JavaScript?
+a) constant
+b) readonly
+c) protect
+d) final
+Answer: a) constant
+
+What is the correct way to select an element with the ID "myElement" using JavaScript?
+a) getElementById("#myElement")
+b) document.getElementByName("myElement")
+c) document.getElementById("myElement")
+d) querySelector("#myElement")
+Answer: c) document.getElementById("myElement")
+
+What is the result of the following expression in JavaScript?
+"10" + 20 - 5
+a) "1020"
+b) 25
+c) NaN
+d) "10205"
+Answer: d) "10205"
+
+What is the output of the following code?
+console.log(0.1 + 0.2 === 0.3);
+a) true
+b) false
+c) NaN
+d) SyntaxError
+Answer: b) false
+
+What does the typeof operator return for an array?
+a) "array"
+b) "object"
+c) "array-like"
+d) "undefined"
+Answer: b) "object"
+

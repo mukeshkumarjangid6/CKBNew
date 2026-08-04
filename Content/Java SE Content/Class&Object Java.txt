@@ -1,0 +1,17 @@
+Class: 
+	State/field/Instance variables.
+	Behaviour/functions/methods.
+	Common values.
+Object: 
+	Represent the common properties and behaviour.
+	Represent the specific set of values (Instance variables).
+
+Variables:
+	Instance Variables:
+		These are the non-static variables.
+		Declared within the class (Not in method).
+		Allocate memory depends on the number of objects created.
+		It can be accessed in any method of the class inwhich Instance variable 		declared.
+	Local Variables:
+		Declare within the method.
+		It can be accessed only within the method where declared.

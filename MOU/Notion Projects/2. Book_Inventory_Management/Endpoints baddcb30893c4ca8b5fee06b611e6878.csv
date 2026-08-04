@@ -1,0 +1,425 @@
+﻿Endpoint,Property,1,Category,Description,ErrorResponse,Errorresponse,HTTP Verb/Method,SuccessResponse,SuccessResponse 
+"
+  /api/publisher/post
+  ",,,Publisher,"
+  Add new publisher object
+  ",,"{
+  ""code"": ADDFAILS"",
+  ""message"":Publisher already exist""
+}",POST,,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Publisher added successfully""
+}"
+/api/book/post,,,Book,Add new Book object in DB,,"{
+  ""code"": ADDFAILS"",
+  ""message"":Book already exist""
+}",POST,,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Book added successfully""
+}"
+/api/books/,,,Book,Get all book object,,,GET,,"
+  {Books}
+  "
+/api/book/{isbn},,,Book,Get Book Object,,,GET,,"
+  Book
+  "
+/api/book/title/{title},,,Book,Get Book Object with title,,,GET,,"
+  Book
+  "
+/api/book/category/{category},,,Book,Get Books of given category,,,GET,,"
+  {Books}
+  "
+/api/book/publisher/{publisherId},,,Book,Get Books published by a publisher,,,GET,,"
+  {Books}
+  "
+"
+  /api/author/update/firstname/{authorId}
+  ",,,Author,"
+  Update first name for the given
+  Author ID
+  ",,,PUT,,
+"
+  /api/author/lastname/{lastname}
+  ",,,Author,"
+  Get author with given last name
+  ",,,GET,,"
+  Author object
+  "
+"
+  /api/author/firstname/{firstname}
+  ",,,Author,"
+  Get author with given first name
+  ",,,GET,,"
+  Author object
+  "
+"
+  /api/author/{authorId}
+  ",,,Author,"
+  Get author object with given
+  Author ID
+  ",,,GET,,"
+  Author object
+  "
+"
+  /api/author/update/lastname/{authorId}
+  ",,,Author,"
+  Update last name for the given
+  Author ID
+  ",,,PUT,,
+"
+  /api/author/books/{authorId}
+  ",,,Author,"
+  Get all books of an author
+  ",,,GET,,"
+  {Books}
+  "
+/api/book/update/title/{isbn},,,Book,Update title of Book object with given ISBN,,,PUT,,"
+"
+"
+  Update title of Book object with given ISBN
+  ",,,Book,Update description of Book object with given ISBN,,,PUT,,"
+"
+"
+  /api/author/post
+  ",,,Author,"
+  Add
+  new Author object in DB
+  ",,"{
+  ""code"": ADDFAILS"",
+  ""message"":Author already exist""
+}",POST,,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Author added successfully""
+}"
+/api/book/update/category/{isbn},,,Book,Update category of Book object with given ISBN,,,PUT,,"
+"
+/api/book/update/edition/{isbn},,,Book,Update edition of Book object with given ISBN,,,PUT,,"
+"
+/api/book/update/publisher/{isbn},,,Book,Update publisher Object of Book object with given ISBN,,,PUT,,"
+"
+"
+  /api/publishers
+  ",,,Publisher,"
+  Get all publishers
+  ",,,GET,,"
+  {Publisher}
+  "
+"
+  /api/publisher/{publisherId}
+  ",,,Publisher,"
+  Get publisher object with given
+  ID
+  ",,,GET,,"
+  Publisher
+  "
+"
+  /api/publisher/name/{name}
+  ",,,Publisher,"
+  Get publisher object with given
+  name
+  ",,,GET,,"
+  Publisher
+  "
+"
+  /api/publisher/city/{city}
+  ",,,Publisher,"
+  Get all publishers in a city
+  ",,,GET,,"
+  {Publisher}
+  "
+"
+  /api/publisher/state/{state}
+  ",,,Publisher,"
+  Update the publisher’s state
+  with given state
+  ",,,PUT,,
+"
+  /api/publisher/update/name/{publisherId}
+  ",,,Publisher,"
+  Update the publisher’s city with
+  given id
+  ",,,PUT,,
+"
+  /api/publisher/update/city/{publisherId}
+  ",,,Publisher,"
+  Update the publisher’s name with
+  given id
+  ",,,PUT,,
+"
+  /api/publisher/update/state/{publisherId}
+  ",,,Publisher,"
+  Get all publishers with given
+  state name
+  ",,,GET,,"
+  {Publisher}
+  "
+AUTH,,,,,,,,,
+New Endpoint,,,,,,,,,
+New Endpoint,,,,,,,,,
+Code,,,,,,,,,
+/api/state/post,,,State,"
+  Add
+  new state object
+  ",,"{
+  ""code"": ADDFAILS"",
+  ""message"":State already exist""
+}",POST,,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""State added successfully""
+}"
+"
+  /api/states
+  ",,,State,"
+  Get all states
+  ",,,GET,,"
+  {State}
+  "
+"
+  /api/state/{stateId}
+  ",,,State,"
+  Update state’s name with given
+  state ID
+  ",,,PUT,,
+"
+  /api/state/update/name/{stateId}
+  ",,,State,"
+  Get state with given state ID
+  ",,,GET,,"
+  State
+  "
+"
+  /api/reviewer/post
+  ",,,Reviewer,"
+  Add
+  new reviewer object
+  ",,"{
+  ""code"": ADDFAILS"",
+  ""message"":Reviewer already exist""
+}",POST,,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Reviewer added successfully""
+}"
+"
+  /api/reviewer/{reviewerId}
+  ",,,Reviewer,"
+  Update employedby with given Id
+  ",,,PUT,,
+"
+  /api/reviewer/name/{reviewerId}
+  ",,,Reviewer,"
+  Update first name with given Id
+  ",,,PUT,,
+"
+  /api/reviewer/employedby/{reviewerId}
+  ",,,Reviewer,"
+  Get reviewer with given id
+  ",,,GET,,"
+  Reviewer
+  "
+"
+  /api/user/post
+  ",,,User,"
+  Add
+  new user object
+  ",,"{
+  ""code"": ADDFAILS"",
+  ""message"":User already exist""
+}",POST,,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""User added successfully""
+}"
+"
+  /api/user/{userId}
+  ",,,User,"
+  Get user with given id
+  ",,,GET,,"
+  User
+  "
+"
+  /api/user/update/firstname/{userId}
+  ",,,User,"
+  Update phone number with given
+  Id
+  ",,,PUT,,
+"
+  /api/user/update/lastname/{userId}
+  ",,,User,"
+  Update last name with given Id
+  ",,,PUT,,
+"
+  /api/user/update/phonenumber/{userId}
+  ",,,User,"
+  Update first name with given Id
+  ",,,PUT,,
+"
+  /api/bookreview/post
+  ",,,Book Review,"
+  Add
+  new book review object
+  ",,"{
+  ""code"": ADDFAILS"",
+  ""message"":Book Reviewer already exist""
+}",POST,,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Book Reviewer added successfully""
+}"
+"
+  /api/bookreview/update/comments/{isbn}
+  ",,,Book Review,"
+  Update comments with given Id
+  ",,,PUT,,
+"
+  /api/bookreview/update/rating/{isbn}
+  ",,,Book Review,"
+  Update rating with given Id
+  ",,,PUT,,
+/api/bookreview/{isbn},,,Book Review,"
+  Get book review with given id
+  ",,,GET,,"
+  Book Review
+  "
+"
+  /api/inventory/post
+  ",,,Inventory,"
+  Add new inventory object
+  ",,"{
+  ""code"": ADDFAILS"",
+  ""message"":Inventory already exist""
+}",POST,,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Inventory added successfully""
+}"
+"
+  /api/inventory/{inventoryId}
+  ",,,Inventory,"
+  Update purchased with given Id
+  ",,,PUT,,
+"
+  /api/inventory/update/purchased/{inventoryId}
+  ",,,Inventory,"
+  Get  Inventory with given id
+  ",,,GET,,"
+   Inventory
+  "
+"
+  /api/bookcondition/post
+  ",,,Book Condition,"
+  Add new book condition object
+  ",,"{
+  ""code"": ADDFAILS"",
+  ""message"":Book condition  already exist""
+}",POST,,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Book Condition added successfully""
+}"
+"
+  /api/bookcondition/{ranks}
+  ",,,Book Condition,"
+  Update price with given ranks
+  ",,,PUT,,
+"
+  /api/bookcondition/update/description/{ranks}
+  ",,,Book Condition,"
+  Update full description with
+  given ranks
+  ",,,PUT,,
+"
+  /api/bookcondition/update/fullDescription/{ranks}
+  ",,,Book Condition,"
+  Update description with given ranks
+  ",,,PUT,,
+"
+  /api/bookcondition/update/price/{ranks}
+  ",,,Book Condition,"
+  Get book condition with given ranks
+  ",,,GET,,"
+  Book condition
+  "
+"
+  /api/category/post
+  ",,,Category,"
+  Add new category object
+  ",,,POST,,"
+  String: category added successfully
+  "
+"
+  /api/category/{catId}
+  ",,,Category,"
+  Update description with given Id
+  ",,,PUT,,"
+  Category
+  "
+"
+  /api/category/update/description/{catId}
+  ",,,Category,"
+  Get category with given id
+  ",,,GET,,"
+  Category
+  "
+"
+  /api/shoppingcart/post
+  ",,,Shopping Cart,"
+  Add new  shopping cart object
+  ",,,POST,,"
+  String: Shopping cart added successfully
+  "
+/api/ shoppingcart /update/isbn/{userId},,,Shopping Cart,"
+  Update isbn with given Id
+  ",,,PUT,,"
+  Shopping cart
+  "
+"
+/api/ shoppingcart /{userId}",,,Shopping Cart,"
+  Get cart with given id
+  ",,,GET,,"
+  Shopping cart
+  "
+"
+  /api/purchaselog/post
+  ",,,Purchase Log,"
+  Add new  purchaselog object
+  ",,,POST,,"
+  String: Purchase Log added successfully
+  "
+"
+  /api/purchaselog/{userId}
+  ",,,Purchase Log,"
+  Get purchase log for the given
+  userid
+  ",,,GET,,"
+  Purchase Log
+  "
+"
+  /api/purchaselog/update/inventoryid/{userId}
+  ",,,Purchase Log,"
+  Update inventory Id of purchase
+  log given user id
+  ",,,PUT,,"
+  Purchase log
+  "
+"
+  /api/permrole/post
+  ",,,Perm Role,"
+  Add new permrole object
+  ",,"{
+  ""code"": ADDFAILS"",
+  ""message"":Perm Role already exist""
+}",POST,,"{
+  ""code"": ""POSTSUCCESS"",
+  ""message"": ""Perm Role added successfully""
+}"
+"
+  /api/permrole/{rolenumber}
+  ",,,Perm Role,"
+  Update perm role of a given role
+  number
+  ",,,PUT,,
+"
+  /api/permrole/update/permeole/{rolenumber}
+  ",,,Perm Role,"
+  Get permrole object for the
+  given rollnumber
+  ",,,GET,,"
+  Permrole object
+  "
+,,,Publisher,,,,,,

@@ -1,0 +1,14 @@
+	Constructor is used to set the user defined default value to variable.
+
+	 Benefits:
+	 The constructor set the user-defined default values to variables.
+	 Does not need to invoke this method (Constructor is a method).
+	 Constructor invokes automatically when creating an object (new AreaCicle())
+
+	 Constraints:
+	 Constructor name must be same as Class Name.
+	 Constructor can not return any value.
+
+	 Types:
+	 Parameterized Constructor
+	 No Parameterized Constructor/No-arg constructor

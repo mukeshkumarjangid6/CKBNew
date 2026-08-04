@@ -1,0 +1,3 @@
+Day 1: Azuere Introduction & Services
+Day 2: Create Virtual Machin and deployed small ASP.NET Service
+Day 3: Azure Cosmos

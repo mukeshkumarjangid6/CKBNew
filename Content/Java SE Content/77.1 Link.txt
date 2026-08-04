@@ -1,0 +1,2 @@
+https://www.javatpoint.com/transaction-management-in-jdbc
+https://www.journaldev.com/2483/java-jdbc-transaction-management-savepoint

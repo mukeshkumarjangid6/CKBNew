@@ -1,0 +1,126 @@
+package firstApp;
+
+class Engine {
+	String engineType;
+
+	public String getEngineType() {
+		return engineType;
+	}
+
+	public void setEngineType(String engineType) {
+		this.engineType = engineType;
+	}
+
+	@Override
+	public String toString() {
+		return "Engine [engineType=" + engineType + "]";
+	}
+
+}
+
+class Car {
+	Engine engine;
+	String carModel;
+
+	public Engine getEngine() {
+		return engine;
+	}
+
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+
+	public String getCarModel() {
+		return carModel;
+	}
+
+	public void setCarModel(String carModel) {
+		this.carModel = carModel;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [engine=" + engine + ", carModel=" + carModel + "]";
+	}
+
+}
+
+public class App {
+
+	public static void main(String[] args) {
+		Engine engine = new Engine();
+		engine.setEngineType("V8 Engine");
+		Car car = new Car();
+		car.setEngine(engine);
+		car.setCarModel("Swift VDI");
+		System.out.println(car);
+
+		engine.setEngineType("V6 Engine");
+		
+		System.out.println(car);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package firstApp;
+
+//Array Slicing
+public class App {
+
+	public static void main(String[] args) {
+		Integer[] salaries = new Integer[6];
+		salaries[0] = 20000;
+		salaries[1] = 19000;
+		salaries[2] = 25000;
+		salaries[3] = 24000;
+		salaries[4] = 27000;
+		salaries[5] = 32000;
+
+		Integer[] updatedSalaries = new Integer[salaries.length];
+		int start = 2;
+		int end = 4;
+		for (int i = start; i <= end; i++) {
+			updatedSalaries[i - start] = salaries[i];
+		}
+		for (Integer salary : updatedSalaries) {
+			if (salary != null) {
+				System.out.print(salary + " ");
+			}
+		}
+	}
+}

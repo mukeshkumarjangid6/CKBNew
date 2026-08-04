@@ -1,0 +1,9 @@
+Console sign-in URL
+https://lab-training11.signin.aws.amazon.com/console
+
+User name
+Mukesh
+
+mukesh@21
+
+IAM Identity Centers Remaining

@@ -1,0 +1,298 @@
+What is JavaScript?
+a) A server-side scripting language
+b) A markup language
+c) A programming language for creating interactive web pages
+d) A database management system
+
+Which keyword is used to declare a variable in JavaScript?
+a) var
+b) int
+c) string
+d) variable
+
+Which of the following is a correct way to comment in JavaScript?
+a) <!-- This is a comment -->
+b) /* This is a comment */
+c) // This is a comment
+d) This is a comment
+
+What is the output of the following code?
+console.log(2 + "2");
+a) 4
+b) 22
+c) 24
+d) "22"
+
+Which of the following is NOT a JavaScript data type?
+a) Number
+b) Boolean
+c) Object
+d) Character
+
+Which function is used to print something to the console in JavaScript?
+a) log()
+b) print()
+c) display()
+d) console.log()
+
+How do you write "Hello, World!" in an alert box in JavaScript?
+a) alert("Hello, World!");
+b) msgBox("Hello, World!");
+c) console.log("Hello, World!");
+d) prompt("Hello, World!");
+
+Which operator is used for concatenation of strings in JavaScript?
+a) +
+b) *
+c) /
+d) %
+
+How do you declare a function in JavaScript?
+a) function myFunction()
+b) myFunction = function()
+c) declare myFunction()
+d) def myFunction():
+
+What does the "typeof" operator return?
+a) The data type of a variable
+b) The value of a variable
+c) The size of a variable
+d) The index of a variable
+
+Which of the following is NOT a JavaScript framework/library?
+a) AngularJS
+b) ReactJS
+c) jQuery
+d) JavaFX
+
+What is the correct way to access the length of an array in JavaScript?
+a) lengthOf(array)
+b) array.length
+c) size(array)
+d) length(array)
+
+What is the output of the following code?
+console.log(3 === "3");
+a) true
+b) false
+c) undefined
+d) error
+
+Which method is used to remove the last element from an array in JavaScript?
+a) removeLast()
+b) pop()
+c) shift()
+d) unshift()
+
+How do you round the number 7.25 to the nearest integer in JavaScript?
+a) Math.round(7.25)
+b) round(7.25)
+c) Math.floor(7.25)
+d) Math.ceil(7.25)
+
+What is the purpose of the "this" keyword in JavaScript?
+a) It refers to the current HTML document
+b) It refers to the parent element of a nested element
+c) It refers to the current object in a method
+d) It refers to the previous value of a variable
+
+Which method is used to convert a string to uppercase in JavaScript?
+a) toUpperCase()
+b) uppercase()
+c) upper()
+d) toUpper()
+
+What is the output of the following code?
+console.log(5 > 3 && 2 < 4);
+a) true
+b) false
+c) undefined
+d) error
+
+Which of the following is a correct way to create an object in JavaScript?
+a) var obj = object();
+b) var obj = {};
+c) var obj = [];
+d) var obj = new Object();
+
+What does the "NaN" stand for in JavaScript?
+a) Not a Null
+b) Not a Number
+c) No Available Number
+d) No Action Needed
+
+Which method is used to remove the first element from an array in JavaScript?
+a) removeFirst()
+b) pop()
+c) shift()
+d) unshift()
+
+What is the correct way to access the value of an element by its id in JavaScript?
+a) getElementById("elementId")
+b) getElementByClass("elementId")
+c) getElementByTag("elementId")
+d) getElementByName("elementId")
+
+What is the output of the following code?
+var x = 10;
+console.log(x++);
+a) 10
+b) 11
+c) 9
+d) NaN
+
+Which method is used to convert a string to an integer in JavaScript?
+a) parseInt()
+b) toString()
+c) toInteger()
+d) convertToInt()
+
+What is the purpose of the "addEventListener" method in JavaScript?
+a) It adds a new event to an element
+b) It removes an event from an element
+c) It updates the content of an element
+d) It hides an element from the page
+
+What is the output of the following code?
+console.log("Hello".length);
+a) 4
+b) 5
+c) 6
+d) 7
+
+Which method is used to convert a string to lowercase in JavaScript?
+a) toLowerCase()
+b) lowercase()
+c) lower()
+d) toLower()
+
+What is the correct way to check if a variable is an array in JavaScript?
+a) typeof variable === "array"
+b) variable.isArray()
+c) Array.isArray(variable)
+d) variable instanceof Array
+
+What is the output of the following code?
+var x = 5;
+var y = 10;
+console.log(x + y + "20");
+a) 35
+b) 520
+c) 20
+d) 1520
+
+How do you write an if statement in JavaScript?
+a) if (condition) { code }
+b) if condition: code
+c) if { condition: code }
+d) if { code: condition }
+
+Which method is used to add an element to the end of an array in JavaScript?
+a) push()
+b) pop()
+c) shift()
+d) unshift()
+
+What is the purpose of the "setTimeout()" function in JavaScript?
+a) It executes a function repeatedly at a fixed interval.
+b) It delays the execution of a function by a specified amount of time.
+c) It sorts the elements of an array in alphabetical order.
+d) It removes an element from an array.
+
+What is the output of the following code?
+console.log(10 % 3);
+a) 1
+b) 3.33
+c) 0.1
+d) 0
+
+Which method is used to convert a number to a string in JavaScript?
+a) toString()
+b) toNumber()
+c) convertToString()
+d) stringify()
+
+What is the purpose of the "length" property in JavaScript?
+a) It returns the size of an array.
+b) It returns the number of characters in a string.
+c) It returns the number of elements in an object.
+d) It returns the length of a number.
+
+What is the output of the following code?
+var x = "Hello";
+var y = "World";
+console.log(x + " " + y);
+a) HelloWorld
+b) Hello World
+c) Hello+World
+d) x + y
+
+Which method is used to remove an element from the beginning of an array in JavaScript?
+a) removeFirst()
+b) pop()
+c) shift()
+d) unshift()
+
+What is the purpose of the "slice()" method in JavaScript?
+a) It splits a string into an array of substrings.
+b) It removes elements from an array and returns the removed elements.
+c) It returns a copy of a portion of an array into a new array.
+d) It sorts the elements of an array.
+
+What is the output of the following code?
+var x = 5;
+var y = "10";
+console.log(x + y);
+a) 510
+b) 15
+c) 50
+d) "510"
+
+Which of the following is NOT a JavaScript loop statement?
+a) for
+b) while
+c) do-while
+d) if
+
+
+Answers:
+c) A programming language for creating interactive web pages
+a) var
+c) // This is a comment
+d) "22"
+d) Character
+d) console.log()
+a) alert("Hello, World!");
+a) +
+a) function myFunction()
+a) The data type of a variable
+d) JavaFX
+b) array.length
+b) false
+b) pop()
+a) Math.round(7.25)
+c) It refers to the current object in a method
+a) toUpperCase()
+a) true
+d) var obj = new Object();
+b) Not a Number
+c) shift()
+a) getElementById("elementId")
+a) 10
+a) parseInt()
+a) It adds a new event to an element
+b) 5
+a) toLowerCase()
+c) Array.isArray(variable)
+b) 520
+a) if (condition) { code }
+a) push()
+b) It delays the execution of a function by a specified amount of time.
+a) 1
+a) toString()
+a) It returns the size of an array.
+b) Hello World
+c) shift()
+c) It returns a copy of a portion of an array into a new array.
+a) 510
+d) if

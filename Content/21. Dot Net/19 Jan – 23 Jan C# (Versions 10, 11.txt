@@ -1,0 +1,13 @@
+Power session .NET 23 Feb 2026
+
+19 Jan – 23 Jan: C# (Versions 10, 11, 12).
+26 Jan – 27 Jan: Understanding EF Core ORM.
+Till 5 Feb: ASP.NET.
+Till 10 Feb: REST API.
+
+Excluding Azure.
+
+21 Jan 6 to 9 pm Varsha is free.
+
+
+Selvi, Nikhil, VijayaLaxmi for Docker

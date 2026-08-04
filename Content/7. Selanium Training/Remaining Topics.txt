@@ -1,0 +1,25 @@
+Parallel Testing with Selenium-Java. DONE
+The Page Object Model (POM) design pattern in Selenium-Java- DONE
+Apache POI with Java-Selenium with TestNg for Excel operations. DONE except writing
+Extent Report in Java-Selenium with testNg.
+
+Complete Dynamic Table examples. Done
+All selenium examples must be using testNg. DONE
+Make the doc of Cucumber TestNg in personal laptop. DONE
+Add TestNG extra stuff in personal laptop. DONE
+All examples must be in eclipse in running mode in company laptop.
+----------------------------------------------------------------------
+Project:
+using Cucumber:
+google doodles
+click i am lucky
+select color or topic using excel
+if select 2 color that must show doodles.
+Validate the name of color:
+provide 3 color within one set & provide 3 set to excel.
+the name of dodles name assert must be assert.
+Extend report and cross browser report. extend report using log and cross browser using property file.
+extend can generate by two ways.
+----------------------------------------------------------------------
+
+https://www.youtube.com/watch?v=Y-IfzQBCkHA

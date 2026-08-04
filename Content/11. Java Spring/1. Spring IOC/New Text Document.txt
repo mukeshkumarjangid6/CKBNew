@@ -1,0 +1,21 @@
+IOC (Inversion Of Control): Giving control to the container to get an instance of the object is called Inversion of Control, means instead of you are creating an object using the new operator, let the container do that for you.
+
+DI (Dependency Injection): Way of injecting properties to an object is called Dependency Injection.
+
+We have three types of Dependency Injection:
+
+Constructor Injection
+Setter/Getter Injection
+Interface Injection
+Spring supports only Constructor Injection and Setter/Getter Injection.
+
+
+
+
+
+File 2 (First App Component) — foundational concepts, practice & MCQs.
+File 3 (DI with Autowiring) — hands‑on DI with a single dependency.
+File 4 (IOC & DI with Interfaces/Implementations) — abstraction & multiple candidates. (Add @Qualifier/@Primary as noted.)
+File 5 uses @Configuration + @Bean method definitions and field injection in cars (no @Component on classes).
+File 6 uses @ComponentScan with constructor injection for cars.
+File 7 uses @ComponentScan with setter injection for cars.

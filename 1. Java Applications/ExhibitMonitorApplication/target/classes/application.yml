@@ -1,0 +1,123 @@
+time:
+  timezone: "Asia/Kolkata"
+
+files:
+
+  # Supported logical file types
+  # Used by regex validation
+  supported_file_types:
+    - "loan"
+    - "kyc"
+    - "newatt"
+
+  # SLA configuration
+  schedule:
+
+    loan:
+      deadline: "22:10"
+      grace_minutes: 60
+
+    kyc:
+      deadline: "22:10"
+      grace_minutes: 60
+
+    newatt:
+      deadline: "22:10"
+      grace_minutes: 60
+
+  # ==========================================
+  # Schema Definitions
+  # ==========================================
+  schema:
+
+    loan.csv:
+
+      delimiter: ","
+
+      required_headers:
+        - "Loan_Account_Id"
+        - "Email_Id"
+        - "Date_Of_Disbursement"
+        - "Balance"
+        - "Last_Installment_Date"
+
+      columns:
+
+        Loan_Account_Id:
+          required: true
+          type: string
+
+        Email_Id:
+          required: true
+          type: string
+
+        Date_Of_Disbursement:
+          required: true
+          type: date
+          format: "yyyy-MM-dd"
+
+        Balance:
+          required: true
+          type: number
+
+        Last_Installment_Date:
+          required: true
+          type: date
+          format: "yyyy-MM-dd"
+
+    kyc.csv:
+
+      delimiter: ","
+
+      required_headers:
+        - "KYC_Initiated_Date"
+        - "KYC_Completed_Date"
+
+      columns:
+
+        KYC_Initiated_Date:
+          required: true
+          type: date
+          format: "yyyy-MM-dd"
+
+        KYC_Completed_Date:
+          required: true
+          type: date
+          format: "yyyy-MM-dd"
+
+    newatt.csv:
+
+      delimiter: ","
+
+      required_headers:
+        - "Application_Date"
+        - "Created_Date"
+
+      columns:
+
+        Application_Date:
+          required: true
+          type: date
+          format: "yyyy-MM-dd"
+
+        Created_Date:
+          required: true
+          type: date
+          format: "yyyy-MM-dd"
+
+# ==========================================
+# Folder Configuration
+# ==========================================
+io:
+
+  # Files copied from FTP/manual drop location
+  incoming: "data/incoming"
+
+  # Accepted files waiting for processing
+  processingFolder: "data/processing"
+
+  # Files completely processed
+  processedFolder: "data/processed"
+
+  # Daily consolidated reports
+  output: "data/output"

@@ -1,0 +1,30 @@
+package concurrentSquareCalculator;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+public class App {
+	public static void main(String[] args) {
+		ExecutorService executor = Executors.newFixedThreadPool(3);
+
+		Runnable task = () -> {
+			// Simulate some computation
+			try {
+				System.out.println(Thread.currentThread().getName() + " is Sleeping for 1 Sec.");
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
+			}
+		};
+
+		for (int i = 0; i < 5; i++) {
+			Future<?> future = executor.submit(task);
+			// Use the future to check if the task is complete
+		}
+
+		// Shutdown the executor when done
+		executor.shutdown();
+	}
+}
+

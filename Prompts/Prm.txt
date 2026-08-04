@@ -1,0 +1,123 @@
+Act as a .NET expert and evaluator with data analytical skill. Wait for my next prompt.
+
+Review the file and Create 11 Practice sheet direct questions with one line answer. The question must be related to the C# and testing technical questions. Please categorize the questions layers wise such as repository, Model, Service, presentation layer.
+
+-------------------------------------------------------------------------------------------------
+
+I am providing the scores of the technologies of Java and feedback of the participant of evaluation:
+"
+Conceptual Understanding 
+Java programming	Collection	Solid	DB Connect	Web Api	Spring	Angular	Microservice
+
+
+Feedback : 
+"
+Task: Review the marks & feedback and provide concise and clear feedback without assumption with consolidated one conceptual understanding mark.
+
+-------------------------------------------------------------------------------------------------
+
+
+
+I am providing the scores of the technologies of .NET and feedback of the participant of evaluation:
+"
+Conceptual Understanding 
+C# SOLID Principles EF Core Web API Angular Microservices
+2	3	2	2	1	1
+
+Feedback : C# Oop & collection & build in Delegate need to work with use case. Linq & Ef core is answerable but need brushup. WebApi ok. angular & microservices need to learn.
+"
+Task: Review the marks & feedback and provide concise and clear feedback without assumption with consolidated one conceptual understanding mark.
+---------------------------------------------------------------------------------------------------
+Role: Act as an expert in Dotnet, Azure Solution Architect & Angular-version21 Technical Content Creator, with strong expertise in enterprise training design, English communication, and data analysis.
+
+Context:
+I am a corporate trainer with 15 years of experience in Java Full Stack development, recently transitioned into the .NET ecosystem as a beginner. I am designing a multi-week, enterprise-grade training program and need to create high-quality, structured, and easy-to-deliver content.
+The overall curriculum includes multiple modules (C#, ASP.NET Core, Microservices, Azure, Angular). Further instructions will be provided step by step.
+
+Task:
+You will be provided with a list of topics. Your responsibility is to explain each topic clearly and concisely while ensuring that:
+- The entire content can be delivered within 45 minutes.
+- The explanation is organized into one well‑structured training session.
+
+Guidelines
+Language:
+-Use simple, beginner‑friendly language, suitable for learners with only basic prior knowledge.
+Examples:
+-Include practical, real‑world examples wherever applicable to make concepts easy to understand and hands‑on.
+Structure:
+-Present topics in a logical and progressive order so the session flows smoothly from one concept to the next.
+Engagement:
+-Keep explanations concise, focused, and informative, avoiding unnecessary jargon or excessive theory.
+
+Summary:
+-End the session with a quick recap of key points.
+-Provide an overall summary at the end to reinforce learning.
+
+Input Topics:
+[
+Day 5: HTTP, RxJS & Unit Testing
+Topics
+•	Communication with Server using HTTP Client
+•	Introduction to Observables
+•	RxJS Basics
+•	Unit Testing in Angular
+Demo
+•	Consume ASP.NET Core API
+•	Fetch Employee Data
+•	Simple Observable Example
+•	Basic Component Test
+Outcome
+Participants can:
+•	Call APIs from Angular
+•	Understand Observables
+•	Use basic RxJS concepts
+•	Write simple unit tests
+]
+-------------------------------------------------------------------------------------------------------
+Instruction:
+-Please conclude each topic with a detailed example and relevant use cases, presented step by step for clarity.
+-The examples should be demonstrating strategic thinking, practical application, and real-world relevance.
+
+Ensure that:
+-Examples reflect decision-making situations rather than basic illustrations.
+-Use cases highlight business impact, optimization opportunities, and best practices.
+-The explanation remains structured, logical, and easy to follow, even for advanced professionals.
+-------------------------------------------------------------------------------------------------------
+Create a Practice Sheet (8–10 questions with answers) on the above-mentioned covered topics so your trainees can apply each concept immediately.
+-------------------------------------------------------------------------------------------------------
+Provide me with 10 MCQ Questions on the above-mentioned topics with answers.
+------------------------------------------------------------------------------------------------------
+Provide two practical examples related to the topics mentioned above that demonstrate how they can be applied to solve real-world problems in the financial and healthcare sectors.
+
+Each example should include:
+-A brief description of the problem.
+-How the concept or technology addresses the issue.
+-The measurable benefits or outcomes achieved.
+-------------------------------------------------------------------------------------------------------
+Based on the topics previously covered, your task is to: Write a concise Abstract paragraph that captures the purpose, scope, and key highlights of the content. Provide the Final Outcome section that clearly states the expected results, learnings, or benefits after covering these topics. Output Format: Abstract: (50–75 words, formal and precise) Learning Outcome: (bullet points or a short paragraph summarizing the key results).
+-------------------------------------------------------------------------------------------------------
+I have created a technical document. Please help me:
+-Arrange and organize the sequence of topics for a logical flow.
+-Identify areas for improvement in the content.
+-Suggest grammatical corrections and better sentence structures.
+Ensure the document is clear, easy to follow, and trainee-friendly so that learners can quickly understand the topics.
+
+---------------------------------------------------------------------------------------------------------
+I have created a technical document. Please help me:
+-Identify areas for improvement in the content.
+-Suggest grammatical corrections and better sentence structures.
+Ensure the document is clear, easy to follow, and trainee-friendly so that learners can quickly understand the topics.
+--------------------------------------------------------------------------------------------------------
+Role:
+Act as a Prompt Engineering Expert.
+
+Context:
+I will provide you with prompts that may be informal, unclear, or poorly structured. These prompts need to be improved so they can be effectively used in professional, training, or production environments.
+
+Task:
+Your task is to rewrite each provided prompt to make it clear, concise, and professional.
+-While refining the prompt, you must:
+-Organize it into Role, Context, and Task sections,
+-Improve clarity, structure, and readability,
+-Preserve the original intent and requirements,
+-Wait for my next prompt before proceeding.

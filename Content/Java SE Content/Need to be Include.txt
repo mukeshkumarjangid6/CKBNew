@@ -1,0 +1,22 @@
+Operators except Arithmatic
+
+RECURSION
+
+TIME AND SPACE COMPLEXITY
+
+BACKTRACKING
+
+
+https://stackoverflow.com/questions/28417262/when-and-why-would-you-use-javas-supplier-and-consumer-interfaces
+
+https://www.javabrahman.com/java-8/java-8-java-util-function-consumer-tutorial-with-examples/
+
+https://www.google.com/amp/s/www.geeksforgeeks.org/stream-anymatch-java-examples/amp/
+
+Interoperability Java
+
+Nested and Branched If else
+
+Arrays utility class.
+
+ArrayList to TreeSet and vice versa.

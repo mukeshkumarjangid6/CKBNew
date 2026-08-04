@@ -1,0 +1,10 @@
+Database: TrainingInstitute
+
+Table: Student
+Attributes: RollNo (Primary Key), Name, Address, Phone, Age
+
+Table: Course
+Attributes: CourseId (Primary key), CourseName, Duration, CoursePrice
+
+Table: EnrolledCourse
+Attributes: enrolledCourseId (Primary key), CourseId, RollNo (Forign Keys)

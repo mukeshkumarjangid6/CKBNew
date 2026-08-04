@@ -1,0 +1,20 @@
+
+						Books Name
+
+				The Design of Everyday Things by Don Norman.
+				The art of facilitation by dale hunter.
+				Fooled by Randomness
+				
+				
+
+
+
+				
+				Kirti taken me l1 interview
+
+
+SQL: Database:
+
+https://github.com/oracle-samples/db-sample-schemas/releases/tag/v23.1
+
+https://github.com/datacharmer/test_db/blob/master/load_departments.dump

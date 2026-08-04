@@ -1,0 +1,19 @@
+package test;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class TestExample {
+	public static void main(String[] args) {
+		// create a list
+		List<String> list = Arrays.asList("Hello ", "M", "o", "b", "i", "l", "e");
+
+		// we are using stream() method for sequential stream
+		// Iterate and print each element of the stream
+		list.stream().forEach(System.out::print);
+
+		System.out.println();
+		// using parallelStream() method for parallel stream
+		list.parallelStream().forEach(System.out::print);
+	}
+}

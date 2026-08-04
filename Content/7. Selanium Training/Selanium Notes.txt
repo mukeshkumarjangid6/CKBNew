@@ -1,0 +1,94 @@
+Adv Selenium:
+Basics of Selenium
+Components of Selenium
+Setting up Maven project
+Locators in Selenium
+What is Xpath and css Selector
+Different ways to create xpath
+Relative locators
+Working with buttons, links, text field,location elements, 
+Handling Web ELements
+Waits in Selenium
+Implicit wait
+explicit wait
+Fluent Wait
+Swtiching Frames
+Switching windows
+Switching alerts
+Action Class, 
+Select Class,
+Handling Web Tables
+https://demo.automationtesting.in/Windows.html
+https://www.guvi.in/
+https://demo.guru99.com/test/web-table-element.php#
+
+Add the Relative and absolute path in Document file in XPath.
+Check included when to use the locators in which scenario?
+Include xpath axis (following-sibling, parent, child) in the document.
+Create the document by provideing the toc from Udemy course.
+The window id can not see and generate internally and can get by getWindowHandle().
+Type of waits in Selenium Java & diffrences and when to use.
+
+Xpath & Conditional Methods Examples:
+
+
+Weekend pe table means preference must be after testNG and BDD Cucumber.
+First TestNG.
+and BDD Cucumber.
+Use TestNG for selenium, Do not use main method.
+Project based on BDD Cucumber not based on Selenium, they use only selenium.
+one project before 18 August.
+Remove code from PDF because trainee copy the code.
+
+Talk to Nikhil to fill the code CFMG (after getting the code).
+
+from 18 Aug: 30 trainees. Divide them to team and provide modules.5 test from one module and take from extrenal source (excel).
+---------------------------------------------------------------------------------------------------------------------------------
+TDD (Junit, Pytest,TestNG)-
+	Detail & functional test
+	Focus on technical
+BDD (Cucumber, JBehave, Pytest)
+	Approaches-focus on user acceptance test cases
+	How application behave according to customer requirement
+	Focus on behavioral
+	Do not write test cases directly, first write feature file in which we will write all the scenarios in simple English format.
+	Can called that BDD is a enhancement of TDD especially for non-technical persons so that they can easily understand the framework.
+	Emphasis collaboration between technical and non-technical stockholders through the use of a common language (Gherkin) to describe the behavior of a system.
+	It focus on writing the tests in a human-readable format, typically using a "given when then" structure, which help clarify requirements and expectation.
+	Cucumber (Support multiple language ex Java, Rubby, JavaScript)
+	SpecFlow (For .NET)
+	Behave (For Python)
+	JBehave (FOr Java)
+
+Cucumber:
+	Feature File (.feature extension):
+		Write Scenarios and corresponding Steps such as testcase in Gherkin language.
+	Step definition file (Java File):
+		Function definitions followed by feature file steps.
+	Test Runner:
+		Feature file path.
+		Cucuber internally follow the junit concept so test runner is a junit file.
+Working flow:
+	Creating flow: Feature File->Step definition file->Test Runner
+	Work flow: Test Runner->Feature File->Step definition file
+
+Gherkin language contains keywords:
+	Scenario
+	Given
+	When
+	Then
+	And
+
+PreCondition-Given
+Actions-When
+validations-Then
+
+In Eclipse Marketplace type cucumber ECLIPSE PLUGIN.
+Create Maven Project.
+Update POM.xml with required dependencies.
+
+--------------Example CGT--------------
+
+Cucumber framework:
+create maven  project and update pom.
+Create a folder structure.

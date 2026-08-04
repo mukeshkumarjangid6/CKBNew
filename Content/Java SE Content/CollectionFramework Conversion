@@ -1,0 +1,121 @@
+Scenario 1: Converting List to Set
+Question:
+You have a list of unique elements, and you want to ensure that there are no duplicate elements. How would you convert this list into a Set?
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class ListToSetExample {
+    public static void main(String[] args) {
+        List<String> stringList = new ArrayList<>();
+        stringList.add("apple");
+        stringList.add("banana");
+        stringList.add("orange");
+        stringList.add("apple"); // Duplicate element
+
+        // Convert List to Set to remove duplicates
+        Set<String> stringSet = new HashSet<>(stringList);
+
+        System.out.println("List: " + stringList);
+        System.out.println("Set: " + stringSet);
+    }
+}
+
+
+
+Scenario 2: Converting Set to List
+Question:
+You have a set of elements, and you need to perform certain operations that are more convenient with a list (e.g., accessing elements by index). How would you convert the Set to a List?
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class SetToListExample {
+    public static void main(String[] args) {
+        Set<Integer> integerSet = new HashSet<>();
+        integerSet.add(1);
+        integerSet.add(2);
+        integerSet.add(3);
+
+        // Convert Set to List
+        List<Integer> integerList = new ArrayList<>(integerSet);
+
+        System.out.println("Set: " + integerSet);
+        System.out.println("List: " + integerList);
+    }
+}
+
+Scenario 3: Converting List to Map
+Question:
+You have a list of objects, and each object has a unique identifier. You want to create a mapping between the unique identifier and the corresponding object. How would you convert the list to a Map?
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+class Student {
+    private int id;
+    private String name;
+
+    public Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+
+public class ListToMapExample {
+    public static void main(String[] args) {
+        List<Student> studentList = List.of(
+                new Student(1, "Alice"),
+                new Student(2, "Bob"),
+                new Student(3, "Charlie")
+        );
+
+        // Convert List to Map using the student id as the key
+        Map<Integer, Student> studentMap = new HashMap<>();
+        for (Student student : studentList) {
+            studentMap.put(student.getId(), student);
+        }
+
+        System.out.println("List: " + studentList);
+        System.out.println("Map: " + studentMap);
+    }
+}
+-------------------------------------------------------------------------------------
+Scenario 1: Shopping Cart Operations
+Question:
+Imagine you are building an e-commerce platform, and you have a shopping cart represented as a List of items. The customer wants to remove duplicate items from their cart and then convert the items to a Set for faster lookup. How would you implement this in Java?
+
+Scenario 2: User Preferences Storage
+Question:
+In a user preferences system, you have a Set of preferred categories for a user. The user now wants to add more categories and view the preferences in alphabetical order. How would you handle the addition of categories and sorting in Java?
+
+Scenario 3: Employee Data Mapping
+Question:
+You are working on an HR application where employee data is stored in a List. Each employee has a unique employee ID, and now you need to create a Map that associates each employee ID with the corresponding employee's address object. How would you implement this conversion from List to Map?
+
+Scenario 4: Removing Duplicates from Log Entries
+Question:
+In a logging system, you have a List of log entries where each entry represents an event with a timestamp. Due to some glitches, there are duplicate log entries. How would you convert the List to a Set to remove duplicates while ensuring that the latest timestamp is retained?
+
+Scenario 5: Processing User Subscriptions
+Question:
+You are developing a subscription service, and you have a Set of current subscribers. A batch operation provides you with a List of new subscribers. You need to update the current subscribers with the new ones and remove any subscribers who have canceled their subscription. How would you handle this efficiently?
+
+Scenario 6: Converting Data for Reporting
+Question:
+In a reporting module, you have a List of sales transactions with product names and quantities sold. To generate a report, you need to convert this List into a Map where each product name is associated with the total quantity sold. How would you approach this data transformation?
+
+
+
+

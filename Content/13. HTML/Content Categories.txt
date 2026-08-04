@@ -1,0 +1,6 @@
+img map
+iframe
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Content_categories
+
+https://gillandrews.com/website-categories-and-tags/

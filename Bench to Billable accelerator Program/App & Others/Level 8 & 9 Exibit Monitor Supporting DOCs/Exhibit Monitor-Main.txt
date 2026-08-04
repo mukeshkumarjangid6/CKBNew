@@ -1,0 +1,63 @@
+Class Main{
+	
+	1. deserialize file arrival map and restore the data 
+
+	2. spawn Polar Thread;
+}
+
+
+
+class Polar implements Runnable{
+
+	public void run(){
+		
+		while(true){
+
+			files [] = scan the input folder;
+
+			while (File f; files){
+
+				if (isValidFile(f) && !isDuplicateFile(f) && isFileOnTime(f){
+
+					//1. Make an entry into file arrival map. (Key - filename, value - date)
+						//1.1 Serialize the arrival map
+					//2. Move file to processing folder
+					//3. spawn worker thread to process this file
+				}
+				else{
+					// Delete the file
+				}
+			}
+		}
+
+	}
+
+
+	private boolean isValidFile(File f){}
+	
+	private boolean isDuplicateFile(File f){}
+
+	private boolean isFileOnTime(File f){}
+
+}
+
+
+class ExhibitUtil{
+
+		static private Map<FileName, ArrivalTime>
+		static private Map<Filename, Date>
+
+
+
+}
+
+
+class Worker implements Runnable{
+
+	public Worker (File f){}
+
+	public void run(){
+
+		//logic to parse the file
+	}
+}

@@ -1,0 +1,59 @@
+package firstJavaPractice6088;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter product name such as tshirt / shirt");
+		String product = sc.nextLine().trim().toLowerCase();
+
+		System.out.println("Enter product size such as small / medium / large");
+		String size = sc.nextLine().trim().toLowerCase();
+
+		System.out.println("--------------------------------------");
+
+		System.out.println(product);
+		System.out.println(size);
+
+		if (product.equals("tshirt")) {
+			switch (size) {
+			case "small":
+				System.out.println("Rs 1500/-");
+				break;
+			case "medium":
+				System.out.println("Rs 1800/-");
+				break;
+			case "large":
+				System.out.println("Rs 2100/-");
+				break;
+			default:
+				System.out.println("The size is Invalid");
+			}
+
+		}
+
+		if (product.equals("shirt")) {
+			switch (size) {
+			case "small":
+				System.out.println("Rs 3000/-");
+				break;
+			case "medium":
+				System.out.println("Rs 3300/-");
+				break;
+			case "large":
+				System.out.println("Rs 4000/-");
+				break;
+			default:
+				System.out.println("The size is Invalid");
+			}
+
+		}
+		sc.close();
+	}
+
+}
+
